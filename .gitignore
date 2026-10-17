@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.superpowers/
+.local/
+*.pid
+server*.log
+*.zip
