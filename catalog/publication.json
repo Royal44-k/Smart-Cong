@@ -1,0 +1,35 @@
+{
+  "publishedAt": "2026-10-18T03:03:33.230Z",
+  "repository": "https://github.com/Royal44-k/Smart-Cong",
+  "sourceAssets": 683,
+  "sourceBytes": 147265300,
+  "verifiedArchiveSnapshot": {
+    "verifiedAt": "2026-10-18T03:03:32.275Z",
+    "repository": "https://github.com/Royal44-k/Smart-Cong",
+    "commit": "5af97f53513c4526ce9691cc1e10dfb42ee3df70",
+    "branch": "main",
+    "remoteBlobFiles": 701,
+    "allGitBlobHashesMatch": true,
+    "releasesVerified": 1,
+    "releaseZipBytes": 72735228,
+    "latestRelease": "v1.8",
+    "allRemoteZipSha256Match": true
+  },
+  "releases": [
+    {
+      "tag": "v1.8",
+      "releaseId": 416202128,
+      "url": "https://github.com/Royal44-k/Smart-Cong/releases/tag/v1.8",
+      "assetId": 652302305,
+      "name": "caochong-waterline-v1.8.zip",
+      "bytes": 72735228,
+      "sha256": "b4761fe185846297395c2ca27b3895ebb0b2dab9a81caf849587891d151dab44",
+      "serverDigest": "sha256:b4761fe185846297395c2ca27b3895ebb0b2dab9a81caf849587891d151dab44",
+      "downloadUrl": "https://github.com/Royal44-k/Smart-Cong/releases/download/untagged-6402a07119fcc3023147/caochong-waterline-v1.8.zip",
+      "checksumAssetId": 652302729,
+      "published": true
+    }
+  ],
+  "scope": "仅曹冲称象项目；最新版源文件及正式ZIP保持原字节。",
+  "note": "verifiedArchiveSnapshot记录完整资产首次上传后的远端逐文件验证；此回执及导航随后作为独立文档提交。"
+}

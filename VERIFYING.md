@@ -11,6 +11,8 @@ verify 核对全部源资产的字节数和 SHA256、原 v1.8 交付清单以及
 
 下载 [v1.8 正式课堂包](releases/README.md) 后，按 [版本清单](catalog/release-manifest.json) 核对 SHA256。GitHub 自动生成的 Source code 是仓库快照，正式课堂包请选附带的 caochong-waterline-v1.8.zip。
 
+远端文件、v1.8 发布包及 SHA256 附件的核对结果见[上传回执](catalog/publication.json)。
+
 ## 浏览器验证
 
 完整浏览器测试需 Microsoft Edge 和 Playwright 1.63.0。先启动本仓库应用，再运行：

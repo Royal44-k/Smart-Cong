@@ -42,7 +42,7 @@ AI 问答可按[接口配置](classroom/docs/21-companion-api.md)设置 classroo
 |图片和声音|[采用图清单](classroom/media/catalog.json)、[图片图集](classroom/media/gallery.html)、[音频清单](classroom/media/audio/manifest.json)|
 |研究依据|[研究索引](classroom/docs/01-research.md)、[分层教学研究](classroom/docs/16-mode-pedagogy-research.md)|
 |验收与维护|[v1.8 验收](classroom/docs/41-acceptance-v18.md)、[设计验收](classroom/design-qa.md)、[复验方法](VERIFYING.md)|
-|全量盘点|[JSON](catalog/asset-manifest.json)、[CSV](catalog/asset-manifest.csv)、[SHA256](catalog/SHA256SUMS)|
+|全量盘点|[JSON](catalog/asset-manifest.json)、[CSV](catalog/asset-manifest.csv)、[SHA256](catalog/SHA256SUMS)、[上传回执](catalog/publication.json)|
 |正式版本包|[v1.8 下载与校验](releases/README.md)|
 
 采用资源包括 **17 张场景与角色参考图、2 张透明伙伴表情图、1 张六物品图集、19 镜制作卡、38 句对白、19 段合并朗读、38 段逐句源音频和 19 份 VTT 字幕**。图集、试听和学习单需启动本地服务后使用，GitHub 预览 HTML 时显示源码。
