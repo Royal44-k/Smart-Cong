@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-10",
+  "tool": "built-in image_gen",
+  "method": "已显示参考图的连续生成与定向修正；项目路径读取失败后使用对话中已查看的参考图。",
+  "assets": [
+    {
+      "key": "harbor_final",
+      "promptKey": "harbor_prompt",
+      "file": "CC-HARBOR-v002.png",
+      "replaces": "CC-HARBOR-v001.png",
+      "review": "象、照护者与曹冲在岸上；阿舟在空船左后；服装与登船主镜一致。",
+      "prompt": "Create ONE cinematic 16:9 establishing shot showing the PREVIOUS moment of the LAST attached reference. Preserve the exact same dark wooden open barge with lantern at left stern and right-facing bow, the same misty river village and light direction, and same three named characters. In this earlier moment, the same elephant is on the wide RIGHT-HAND PIER, standing safely and calmly NEXT TO the same cream-robed caretaker, NOT aboard. The same teal long-robed child with brown sash and small black topknot stands near caretaker looking at elephant. Boatman in same dark slate robe is aboard the EMPTY boat, at the left stern with oar, same as reference. Camera moved slightly back to reveal enough solid dry pier for the whole elephant. Left half is quieter river and empty barge, right half elephant and child for cover composition. Eye level of child, gentle film realism. No extra people, no text numbers UI logos or modern objects. Critically keep caretaker cream, child teal, boatman dark slate. Correct grounded feet and plausible boat partially submerged in water. Single shot, no montage.",
+      "source": "C:\\Users\\lenovo\\.codex\\generated_images\\01a12369-23a3-70b3-bb1a-d0a1bb2521a7\\exec-d0d8929b-a3cc-49cf-8241-d364b9d8205e.png"
+    },
+    {
+      "key": "split_corrected",
+      "promptKey": "split_correction_prompt",
+      "file": "CC-SPLIT-v002.png",
+      "replaces": "CC-SPLIT-v001.png",
+      "review": "老匠人灰白长须，曹冲在右；两块在桌、一块在秤，总计三块。",
+      "prompt": "Edit ONLY the FIRST of the last two attached images (the balance-on-table scene, NOT the water trough scene). Keep every person, face, garment, light, table object and background unchanged except remove ONE of the three wooden blocks on the table: remove the middle foreground block and restore the wooden tabletop there. Result must show EXACTLY THREE model blocks total: TWO blocks resting on tabletop, ONE block on the right weighing pan. Do not add any block elsewhere. Single cinematic 16:9 image, identical framing, no text or labels.",
+      "source": "C:\\Users\\lenovo\\.codex\\generated_images\\01a12369-23a3-70b3-bb1a-d0a1bb2521a7\\exec-345ade1f-97d3-4284-9d9e-8aaf7b0744e7.png"
+    },
+    {
+      "key": "pond_corrected",
+      "promptKey": "pond_correction_prompt",
+      "file": "CC-POND-v001.png",
+      "review": "空小船漂浮；一个大配重已放左桌，四个小配重在右；无配重直接浸水。",
+      "prompt": "Edit ONLY the FIRST of the last two attached images, the WATER TROUGH scene. Preserve faces, clothes, framing, all background, the tiny floating boat, trough and four small weights on right EXACTLY. There must be ONLY ONE large reference block: keep the large block resting on table to LEFT of trough. REMOVE the extra block held in the elderly man's hand and REMOVE the falling drops beneath it. The same hand is now empty and withdrawing naturally above the water trough. Do not put the hand or any weight into water. Nothing else changes. This depicts all reference load removed before prediction. Single cinematic 16:9 still, no writing or labels.",
+      "source": "C:\\Users\\lenovo\\.codex\\generated_images\\01a12369-23a3-70b3-bb1a-d0a1bb2521a7\\exec-d2faa72e-ff2b-488c-83fa-907dabe093b6.png"
+    },
+    {
+      "file": "CC-UNLOADED-v001.png",
+      "source": "C:/Users/lenovo/.codex/generated_images/01a12369-23a3-70b3-bb1a-d0a1bb2521a7/exec-3c18feb8-935d-48dc-9b78-ccceb76ca233.png",
+      "prompt": "Use case: identity-preserve and precise-object-edit. Make ONE cinematic 16:9 continuity still for the NEXT moment of this exact historical educational story. Edit the reference shot, preserve the exact same wooden barge, framing, right-hand pier, misty river village, morning light, boat dimensions, dark planks, thin rail and bronze lantern at left stern. Remove the elephant from the boat (it has been led offscreen to shore). Move the same dark slate-clothed boatman from the left stern to the right pier beside the same cream-robed caretaker and teal-robed child Cao Chong. All three humans on pier, no human on boat. Keep their exact garments and hair/topknots, seen from rear. The boat is EMPTY of elephant and cargo, floats a little higher naturally, bottom stays submerged, no hanging in air. Boatman gestures toward a small weighing tool on pier. Gentle calm water. Nothing else changes. No writing, labels, numbers, UI, watermarks. Film-grade material realism and gentle educational tone.",
+      "review": "象已下船；空船，三人同在岸边；灯笼、船首朝向和河岸延续登船镜头。"
+    }
+  ],
+  "initialPrompts": {
+    "split": "Generate ONE cinematic 16:9 full-frame shot. The FIRST attached image is a contact sheet: the SECOND ROW RIGHT PANEL is the EXACT identity reference for the grey-haired elderly craftsman with a long white-grey beard, brown robe and cream cuffs on LEFT and Cao Chong child in teal robe with cream cuffs on RIGHT. Use this identity, NOT the younger man in left panel. At the same wooden dock model desk, these two people weigh three small wooden blocks using a small wooden balance and bronze weights. Boy right, elderly craftsman left, same faces and clothing and topknots as second-row-right panel. Three distinct wooden blocks on desk. Calm focused expressions. Same misty river and warm morning light in background, film-grade gentle realism. Last image provides river atmosphere only. Output one scene, NOT a contact sheet or collage. No text numbers letters watermarks, modern items, or additional characters.",
+    "pond": "Use the LAST attached image as exact identity, lighting, costume and camera-axis reference. Create ONE new full-frame 16:9 film still at the same wooden riverside model desk. SAME grey-haired long-bearded elderly craftsman in brown on LEFT, SAME young Cao Chong in teal robe/cream cuffs on RIGHT, same faces, hairstyles and attentive expressions. REPLACE the balance and blocks scene with a shallow wooden WATER TROUGH on the desk. A tiny empty wooden model boat floats inside it, naturally partly submerged; fine ochre waterline mark on its hull. ONE large wooden reference block rests on the desk left of the trough. FOUR small identical wooden weights rest on the desk right of the trough, NONE aboard the tiny boat yet. Old craftsman has just moved the large block off the boat; child watches the boat intently. Preserve the gentle morning light and misty river background, table texture and warm realistic cinematic finish. No modern objects, text, numbers, UI, miniature people or watermark. The boat is a small tabletop model, not a full-size boat. ONE coherent scene, not a collage."
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "version": "1.7.0",
+  "date": "2026-10-12T07:40:07.662Z",
+  "environment": "Node.js v24.20.0 / Playwright / Microsoft Edge / Windows",
+  "runs": [
+    {
+      "name": "learning-browser.mjs",
+      "exitCode": 0,
+      "seconds": 23,
+      "checks": 10,
+      "log": "artifacts/v17-verification/learning-browser.mjs.txt"
+    },
+    {
+      "name": "learning-accessibility-browser.mjs",
+      "exitCode": 0,
+      "seconds": 5.5,
+      "checks": 5,
+      "log": "artifacts/v17-verification/learning-accessibility-browser.mjs.txt"
+    },
+    {
+      "name": "browser.mjs",
+      "exitCode": 0,
+      "seconds": 16,
+      "checks": 9,
+      "log": "artifacts/v17-verification/browser.mjs.txt"
+    },
+    {
+      "name": "edge-browser.mjs",
+      "exitCode": 0,
+      "seconds": 8.1,
+      "checks": 5,
+      "log": "artifacts/v17-verification/edge-browser.mjs.txt"
+    },
+    {
+      "name": "geometry-browser.mjs",
+      "exitCode": 0,
+      "seconds": 1.8,
+      "checks": 1,
+      "log": "artifacts/v17-verification/geometry-browser.mjs.txt"
+    },
+    {
+      "name": "keyboard-browser.mjs",
+      "exitCode": 0,
+      "seconds": 2.5,
+      "checks": 2,
+      "log": "artifacts/v17-verification/keyboard-browser.mjs.txt"
+    },
+    {
+      "name": "production-browser.mjs",
+      "exitCode": 0,
+      "seconds": 4.3,
+      "checks": 7,
+      "log": "artifacts/v17-verification/production-browser.mjs.txt"
+    },
+    {
+      "name": "audio-browser.mjs",
+      "exitCode": 0,
+      "seconds": 3.9,
+      "checks": 4,
+      "log": "artifacts/v17-verification/audio-browser.mjs.txt"
+    },
+    {
+      "name": "production-details-browser.mjs",
+      "exitCode": 0,
+      "seconds": 5.3,
+      "checks": 2,
+      "log": "artifacts/v17-verification/production-details-browser.mjs.txt"
+    },
+    {
+      "name": "play-companion-browser.mjs",
+      "exitCode": 0,
+      "seconds": 13.6,
+      "checks": 12,
+      "log": "artifacts/v17-verification/play-companion-browser.mjs.txt"
+    },
+    {
+      "name": "play-touch-browser.mjs",
+      "exitCode": 0,
+      "seconds": 3.8,
+      "checks": 5,
+      "log": "artifacts/v17-verification/play-touch-browser.mjs.txt"
+    },
+    {
+      "name": "legacy-drag-browser.mjs",
+      "exitCode": 0,
+      "seconds": 2.7,
+      "checks": 1,
+      "log": "artifacts/v17-verification/legacy-drag-browser.mjs.txt"
+    },
+    {
+      "name": "reasoning-browser.mjs",
+      "exitCode": 0,
+      "seconds": 14.3,
+      "checks": 11,
+      "log": "artifacts/v17-verification/reasoning-browser.mjs.txt"
+    },
+    {
+      "name": "workshop-browser.mjs",
+      "exitCode": 0,
+      "seconds": 15.6,
+      "checks": 13,
+      "log": "artifacts/v17-verification/workshop-browser.mjs.txt"
+    },
+    {
+      "name": "exploration-browser.mjs",
+      "exitCode": 0,
+      "seconds": 15.8,
+      "checks": 13,
+      "log": "artifacts/v17-verification/exploration-browser.mjs.txt"
+    },
+    {
+      "name": "transfer-bridge-browser.mjs",
+      "exitCode": 0,
+      "seconds": 12.7,
+      "checks": 14,
+      "log": "artifacts/v17-verification/transfer-bridge-browser.mjs.txt"
+    },
+    {
+      "name": "unit",
+      "exitCode": 0,
+      "seconds": 0.7,
+      "checks": 0,
+      "log": "artifacts/v17-verification/unit.txt"
+    },
+    {
+      "name": "showcase-browser.mjs",
+      "exitCode": 0,
+      "seconds": 21.3,
+      "checks": 12,
+      "log": "artifacts/v17-verification/showcase-browser.mjs.txt"
+    }
+  ],
+  "allPassed": true,
+  "unitTests": 118,
+  "browserChecks": 126,
+  "recheckNote": "新增第二个原生对话框后，旧browser测试的dialog选择器不再唯一；改为#dialog准确验证教师对话框。应用代码未因这次测试失败改变，保留原失败日志并继续剩余脚本。",
+  "finalRecheck": "最后只补充书箱两次装载标识、图文间距与当前页悬停高亮；重跑全部单元及展示浏览器，其他完整回归结果保留。"
+}

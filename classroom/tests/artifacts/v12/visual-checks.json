@@ -1,0 +1,48 @@
+{
+  "colors": [
+    {
+      "mode": "story",
+      "selector": ".cover-actions .primary",
+      "text": "rgb(255, 255, 255)",
+      "background": "rgb(36, 92, 80)",
+      "contrast": 7.72
+    },
+    {
+      "mode": "story",
+      "selector": "[data-journey][aria-pressed=true]",
+      "text": "rgb(255, 255, 255)",
+      "background": "rgb(36, 92, 80)",
+      "contrast": 7.72
+    },
+    {
+      "mode": "story",
+      "selector": "[data-mode][aria-pressed=true]",
+      "text": "rgb(255, 255, 255)",
+      "background": "rgb(36, 92, 80)",
+      "contrast": 7.72
+    },
+    {
+      "mode": "lab",
+      "selector": ".cover-actions .primary",
+      "text": "rgb(255, 255, 255)",
+      "background": "rgb(41, 89, 117)",
+      "contrast": 7.55
+    },
+    {
+      "mode": "lab",
+      "selector": "[data-journey][aria-pressed=true]",
+      "text": "rgb(255, 255, 255)",
+      "background": "rgb(41, 89, 117)",
+      "contrast": 7.55
+    },
+    {
+      "mode": "lab",
+      "selector": "[data-mode][aria-pressed=true]",
+      "text": "rgb(255, 255, 255)",
+      "background": "rgb(41, 89, 117)",
+      "contrast": 7.55
+    }
+  ],
+  "expressions": 8,
+  "errors": []
+}

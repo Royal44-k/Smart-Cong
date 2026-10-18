@@ -1,0 +1,483 @@
+{
+  "version": "1.1",
+  "kind": "中文对白朗读",
+  "engine": "Windows System.Speech 本机中文语音",
+  "rate": -1,
+  "tracks": [
+    {
+      "id": "C-V01",
+      "file": "media/audio/C-V01-VO-v001.wav",
+      "duration": 8.027074829931973,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "c0e7174ea230ff6e437e54d8f4d2fb642efbe02d1c274bd7f152a866443c06f9",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-V01-1.wav",
+          "text": "曹冲：伙伴，你能帮我想个办法吗？",
+          "voice": "Microsoft Yaoyao",
+          "start": 0.2,
+          "end": 3.8334693877551023
+        },
+        {
+          "file": "media/audio/lines/C-V01-2.wav",
+          "text": "老匠人：眼前这杆秤，承不住它。",
+          "voice": "Microsoft Kangkang",
+          "start": 4.283492063492064,
+          "end": 7.727074829931974
+        }
+      ]
+    },
+    {
+      "id": "C-V02A",
+      "file": "media/audio/C-V02A-VO-v001.wav",
+      "duration": 10.481088435374149,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "b0f2df8f38448f0be26cb6ae1ac41afa0e91225322e4d8c6eb7fae79851dfdd0",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-V02A-1.wav",
+          "text": "老匠人：先用模型试一试，别急着把想法当答案。",
+          "voice": "Microsoft Kangkang",
+          "start": 0.2,
+          "end": 5.12281179138322
+        },
+        {
+          "file": "media/audio/lines/C-V02A-2.wav",
+          "text": "曹冲：支撑够不够？这次由你来检验。",
+          "voice": "Microsoft Yaoyao",
+          "start": 5.572834467120181,
+          "end": 10.18108843537415
+        }
+      ]
+    },
+    {
+      "id": "C-V02B",
+      "file": "media/audio/C-V02B-VO-v001.wav",
+      "duration": 9.526213151927438,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "adbbd172cf94f02f1b2489e498438eb13edde052689b6497b39e7aa021ae5a01",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-V02B-1.wav",
+          "text": "曹冲：大象不能拆开，能分开称的东西呢？",
+          "voice": "Microsoft Yaoyao",
+          "start": 0.2,
+          "end": 4.577913832199546
+        },
+        {
+          "file": "media/audio/lines/C-V02B-2.wav",
+          "text": "老匠人：一块一块试，再把每一份合起来。",
+          "voice": "Microsoft Kangkang",
+          "start": 5.0279365079365075,
+          "end": 9.226213151927437
+        }
+      ]
+    },
+    {
+      "id": "C-V03",
+      "file": "media/audio/C-V03-VO-v001.wav",
+      "duration": 9.661133786848072,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "2a6003d84edec9e5421cd441fd5f214a7dccf4136736afee04d71cb57065fc66",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-V03-1.wav",
+          "text": "曹冲：大木块拿走啦，换成小木块试一试。",
+          "voice": "Microsoft Yaoyao",
+          "start": 0.2,
+          "end": 4.697959183673469
+        },
+        {
+          "file": "media/audio/lines/C-V03-2.wav",
+          "text": "曹冲：先猜一猜，再看看小船怎样动。",
+          "voice": "Microsoft Yaoyao",
+          "start": 5.1479818594104305,
+          "end": 9.361133786848072
+        }
+      ]
+    },
+    {
+      "id": "C-V04",
+      "file": "media/audio/C-V04-VO-v001.wav",
+      "duration": 7.227074829931973,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "16067101b140c88cddddb5c687a36ea0a38630fde8e6dd2b354a42a86f575e41",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-V04-1.wav",
+          "text": "阿舟：水会动，船也会上下。",
+          "voice": "Microsoft Kangkang",
+          "start": 0.2,
+          "end": 3.488526077097506
+        },
+        {
+          "file": "media/audio/lines/C-V04-2.wav",
+          "text": "曹冲：你想把记号留在哪里？",
+          "voice": "Microsoft Yaoyao",
+          "start": 3.9385487528344676,
+          "end": 6.927074829931973
+        }
+      ]
+    },
+    {
+      "id": "C-V05",
+      "file": "media/audio/C-V05-VO-v001.wav",
+      "duration": 8.356780045351474,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "0400a14dbac526787a79293c8eda0f1e0f6dd28b8ab11ec6deb16dd264dbf7d9",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-V05-1.wav",
+          "text": "阿舟：等水稳下来，再记。",
+          "voice": "Microsoft Kangkang",
+          "start": 0.2,
+          "end": 3.2286621315192745
+        },
+        {
+          "file": "media/audio/lines/C-V05-2.wav",
+          "text": "曹冲：除了水痕，把船里的人和物也留下。",
+          "voice": "Microsoft Yaoyao",
+          "start": 3.678684807256236,
+          "end": 8.056780045351474
+        }
+      ]
+    },
+    {
+      "id": "C-V06",
+      "file": "media/audio/C-V06-VO-v001.wav",
+      "duration": 7.811746031746032,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "9daaae5bf1ffe508eb73610ac12801660927f8f8d481f44a1a067dd6cc715bba",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-V06-1.wav",
+          "text": "老匠人：同样一份，放一会儿还一样重吗？",
+          "voice": "Microsoft Kangkang",
+          "start": 0.2,
+          "end": 4.19297052154195
+        },
+        {
+          "file": "media/audio/lines/C-V06-2.wav",
+          "text": "曹冲：你来做材料试验员。",
+          "voice": "Microsoft Yaoyao",
+          "start": 4.642993197278911,
+          "end": 7.511746031746031
+        }
+      ]
+    },
+    {
+      "id": "C-V07",
+      "file": "media/audio/C-V07-VO-v001.wav",
+      "duration": 8.037006802721088,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "8459dce801ed6e043f6ac50e58e8362596d8cfeb4b0111755e9cdf0b0951e673",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-V07-1.wav",
+          "text": "阿舟：我去岸上取一下秤。",
+          "voice": "Microsoft Kangkang",
+          "start": 0.2,
+          "end": 3.078684807256236
+        },
+        {
+          "file": "media/audio/lines/C-V07-2.wav",
+          "text": "曹冲：你来装石头，再看看谁换了地方。",
+          "voice": "Microsoft Yaoyao",
+          "start": 3.5287074829931977,
+          "end": 7.737006802721089
+        }
+      ]
+    },
+    {
+      "id": "C-V08",
+      "file": "media/audio/C-V08-VO-v001.wav",
+      "duration": 9.60063492063492,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "e16dc714bf78540e358430a3c7f2502ac5b24bf28b386e149df3e6a0d1c75812",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-V08-1.wav",
+          "text": "阿舟：每一堆，我都分开称好，再合起来。",
+          "voice": "Microsoft Kangkang",
+          "start": 0.2,
+          "end": 4.708072562358277
+        },
+        {
+          "file": "media/audio/lines/C-V08-2.wav",
+          "text": "曹冲：你的记录，能找到它对应的那一堆吗？",
+          "voice": "Microsoft Yaoyao",
+          "start": 5.158095238095238,
+          "end": 9.30063492063492
+        }
+      ]
+    },
+    {
+      "id": "C-V09",
+      "file": "media/audio/C-V09-VO-v001.wav",
+      "duration": 7.156825396825397,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "18e53cc921b15266273ea8e8117dc6affdbb2fec2e1bd72628057d491f262f1e",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-V09-1.wav",
+          "text": "曹冲：众人就要问起了。",
+          "voice": "Microsoft Yaoyao",
+          "start": 0.2,
+          "end": 2.753650793650794
+        },
+        {
+          "file": "media/audio/lines/C-V09-2.wav",
+          "text": "曹冲：你最想再检查哪一条证据？",
+          "voice": "Microsoft Yaoyao",
+          "start": 3.2036734693877555,
+          "end": 6.856825396825397
+        }
+      ]
+    },
+    {
+      "id": "C-V10",
+      "file": "media/audio/C-V10-VO-v001.wav",
+      "duration": 8.616190476190477,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "757de0d288cfd1eb20bdea829d816ba6cbeea511f0dc9a05991fac1d8ea98933",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-V10-1.wav",
+          "text": "曹冲：大家想听听你的理由。",
+          "voice": "Microsoft Yaoyao",
+          "start": 0.2,
+          "end": 3.083446712018141
+        },
+        {
+          "file": "media/audio/lines/C-V10-2.wav",
+          "text": "曹冲：你愿意讲给大家听，还是再回去看看？",
+          "voice": "Microsoft Yaoyao",
+          "start": 3.5334693877551024,
+          "end": 8.316190476190476
+        }
+      ]
+    },
+    {
+      "id": "C-VE1",
+      "file": "media/audio/C-VE1-VO-v001.wav",
+      "duration": 9.861179138321996,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "f417e5c6e7d574d59c2a027811413495182a8b8c85946e3ae96e93de579ff6ff",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-VE1-1.wav",
+          "text": "曹冲：现在，别人也能沿着你的记录再做一次。",
+          "voice": "Microsoft Yaoyao",
+          "start": 0.2,
+          "end": 5.072970521541951
+        },
+        {
+          "file": "media/audio/lines/C-VE1-2.wav",
+          "text": "曹冲：把这个办法，教给下一位伙伴吧。",
+          "voice": "Microsoft Yaoyao",
+          "start": 5.522993197278912,
+          "end": 9.561179138321997
+        }
+      ]
+    },
+    {
+      "id": "C-VE2",
+      "file": "media/audio/C-VE2-VO-v001.wav",
+      "duration": 9.53111111111111,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "80a796568fb17e7958f5bd373cc4e336e631241c61899cae581018252035e334",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-VE2-1.wav",
+          "text": "曹冲：先前的记录还在，修改的理由也找到了。",
+          "voice": "Microsoft Yaoyao",
+          "start": 0.2,
+          "end": 5.002902494331066
+        },
+        {
+          "file": "media/audio/lines/C-VE2-2.wav",
+          "text": "曹冲：把你的新发现，讲给大家听吧。",
+          "voice": "Microsoft Yaoyao",
+          "start": 5.452925170068027,
+          "end": 9.231111111111112
+        }
+      ]
+    },
+    {
+      "id": "C-VE3",
+      "file": "media/audio/C-VE3-VO-v001.wav",
+      "duration": 9.401224489795919,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "81305e3b86a6bb5ed985e3a9f5d9e5e5025e17495688d57589d6462f2bcceef2",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-VE3-1.wav",
+          "text": "曹冲：还不能确认，就把要查的地方说清楚。",
+          "voice": "Microsoft Yaoyao",
+          "start": 0.2,
+          "end": 4.877732426303855
+        },
+        {
+          "file": "media/audio/lines/C-VE3-2.wav",
+          "text": "阿舟：船还在，我们可以再试一次。",
+          "voice": "Microsoft Kangkang",
+          "start": 5.3277551020408165,
+          "end": 9.101224489795918
+        }
+      ]
+    },
+    {
+      "id": "C-VE4",
+      "file": "media/audio/C-VE4-VO-v001.wav",
+      "duration": 8.566167800453515,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "1fcae66a5f0bfd212e4e722bcc641336496113aaa825a7af61b5872d1fbe2efa",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-VE4-1.wav",
+          "text": "管事：这次的记录，都对得上吗？",
+          "voice": "Microsoft Kangkang",
+          "start": 0.2,
+          "end": 3.378321995464853
+        },
+        {
+          "file": "media/audio/lines/C-VE4-2.wav",
+          "text": "曹冲：我们回去，一起找找还没对上的地方。",
+          "voice": "Microsoft Yaoyao",
+          "start": 3.8283446712018145,
+          "end": 8.266167800453516
+        }
+      ]
+    },
+    {
+      "id": "C-V11",
+      "file": "media/audio/C-V11-VO-v001.wav",
+      "duration": 11.320498866213152,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "8a96866ae04f2a893b8d4d52f4c7daad667ab752ed1e4575778e2e2188c6c47b",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-V11-1.wav",
+          "text": "新伙伴：你能用四幅图，把称象的故事讲给我听吗？",
+          "voice": "Microsoft Yaoyao",
+          "start": 0.2,
+          "end": 5.302721088435375
+        },
+        {
+          "file": "media/audio/lines/C-V11-2.wav",
+          "text": "新伙伴：先、再、然后、最后，我等着听你的发现。",
+          "voice": "Microsoft Yaoyao",
+          "start": 5.752743764172336,
+          "end": 11.020498866213153
+        }
+      ]
+    },
+    {
+      "id": "C-L01",
+      "file": "media/audio/C-L01-VO-v001.wav",
+      "duration": 10.925850340136055,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "fe8a8da485144e2e2c40a80fa70b123dbc70311ce64c9f9b455d07c23d5fbcd6",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-L01-1.wav",
+          "text": "新伙伴：木块、小人和水深，你最想研究哪一样？",
+          "voice": "Microsoft Yaoyao",
+          "start": 0.2,
+          "end": 5.267891156462586
+        },
+        {
+          "file": "media/audio/lines/C-L01-2.wav",
+          "text": "新伙伴：先留下猜想，再想好怎样做两次比较。",
+          "voice": "Microsoft Yaoyao",
+          "start": 5.717913832199547,
+          "end": 10.625850340136054
+        }
+      ]
+    },
+    {
+      "id": "C-L02",
+      "file": "media/audio/C-L02-VO-v001.wav",
+      "duration": 11.346077097505669,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "91be9187f330e9bb2f0830c1d99111b1f0450e3a9cc5156dd79eada5eec21dde",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-L02-1.wav",
+          "text": "新伙伴：先摆好一次，记在A栏，再改你要研究的那一项。",
+          "voice": "Microsoft Yaoyao",
+          "start": 0.2,
+          "end": 5.983129251700681
+        },
+        {
+          "file": "media/audio/lines/C-L02-2.wav",
+          "text": "新伙伴：看看两次记录，船的位置有什么变化？",
+          "voice": "Microsoft Yaoyao",
+          "start": 6.433151927437642,
+          "end": 11.04607709750567
+        }
+      ]
+    },
+    {
+      "id": "C-L03",
+      "file": "media/audio/C-L03-VO-v001.wav",
+      "duration": 12.52013605442177,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "sha256": "023debf2b61d66a22db9378ff03b2acef6ccffc2fe8f1ad965915ec2d492963d",
+      "cues": [
+        {
+          "file": "media/audio/lines/C-L03-1.wav",
+          "text": "新伙伴：这回称一箱书。换上砝码时，工具也被拿走了。",
+          "voice": "Microsoft Yaoyao",
+          "start": 0.2,
+          "end": 6.607392290249433
+        },
+        {
+          "file": "media/audio/lines/C-L03-2.wav",
+          "text": "新伙伴：两次水线相同，砝码还替代了谁的重量呢？",
+          "voice": "Microsoft Yaoyao",
+          "start": 7.0574149659863945,
+          "end": 12.220136054421769
+        }
+      ]
+    }
+  ]
+}

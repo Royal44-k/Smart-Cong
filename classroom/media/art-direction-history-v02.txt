@@ -1,0 +1,90 @@
+# 图片制作、美术规范与实际生成记录 v0.2
+
+使用Codex内置image_gen，未选定或验证精确模型版本，不冒称image2.5。采用15张：沿用2张，本轮新增13张。本轮共生成15张候选，其中稳船留线及片尾课堂各修订一次。
+
+## 美术方向与连续性
+
+海青/暖灰/木褐，缓慢自然光；儿童青绿、船工深灰蓝、老匠人褐色、照护者米色。人物合辑是概念参考，其他镜头是文本独立生成，**没有做锁脸或跨镜身份一致性验证**。外部视频用合辑重新锁定角色；分称近景应避开成人脸部，优先手部特写。建筑与船型为演绎，不作汉代精确考证结论。
+
+## 已做的画面校正
+
+- CC-BOARDING v001船内出现照护者，改变了教学模型的人员配置；改用v002：象与一名船工在船，照护者与儿童在岸。
+- CC-STUDY v001仍有历史风格室内/河岸背景，未明确现代教学回环；改用v002现代课桌、水盆和学习卡。
+- 空白纸面由游戏补字；生成筹码只是氛围，不能让学生从图片数筹推断当次结果。
+- E4以对照卡为主题；缺项仅以本次真实记录的文字说明，不能每次都配成忽略船工。
+
+## 采用目录
+
+|ID|用途|实际像素|采用文件|
+|---|---|---|---|
+|CC-HARBOR|码头主视觉|1672×941|[图片](../media/artwork/CC-HARBOR-v001.png)|
+|CC-WATER|船与水氛围特写|1672×941|[图片](../media/artwork/CC-WATER-v001.png)|
+|CC-CHARACTERS|主要人物参考|1672×941|[图片](../media/artwork/CC-CHARACTERS-v001.png)|
+|CC-SCALE|大秤的小模型|1672×941|[图片](../media/artwork/CC-SCALE-v001.png)|
+|CC-SPLIT|分称合计|1672×941|[图片](../media/artwork/CC-SPLIT-v001.png)|
+|CC-OBSERVE|船会记住什么|1672×941|[图片](../media/artwork/CC-OBSERVE-v001.png)|
+|CC-MATERIALS|替代物的选择|1672×941|[图片](../media/artwork/CC-MATERIALS-v001.png)|
+|CC-LEDGER|每一批的来处|1672×941|[图片](../media/artwork/CC-LEDGER-v001.png)|
+|CC-REPORT|把依据摆在众人面前|1672×941|[图片](../media/artwork/CC-REPORT-v001.png)|
+|CC-E1|人人看得懂的一线|1672×941|[图片](../media/artwork/CC-E1-v001.png)|
+|CC-E2|复测之后|1672×941|[图片](../media/artwork/CC-E2-v001.png)|
+|CC-E3|还差一次验证|1672×941|[图片](../media/artwork/CC-E3-v001.png)|
+|CC-E4|水线还需要解释|1672×941|[图片](../media/artwork/CC-E4-v001.png)|
+|CC-BOARDING|稳船留线|1672×941|[图片](../media/artwork/CC-BOARDING-v002.png)|
+|CC-STUDY|从故事回到课堂|1672×941|[图片](../media/artwork/CC-STUDY-v002.png)|
+
+## 本轮逐图实际提示词
+
+### CC-CHARACTERS / v001
+
+Use case: historical-scene. Original cinematic educational concept illustration, landscape 16:9, painterly realism rather than photograph, late Eastern Han China imagined river dock, weathered dark wood, misty jade teal water, warm muted linen and brass highlights, soft natural light, film composition, no readable text, numbers, logos, watermarks, subtitles or UI. No modern tools, no imperial dragon crown, no violence, no animal danger. These are teaching reenactments, not archaeological reconstruction. A clean character continuity lineup on pale warm parchment background. Four SEPARATE full figures spaced widely: young Chinese boy Cao Chong in simple muted blue-green cross-collar robe, dark topknot, calm curious face; adult boatman A Zhou age35 in dark slate linen with narrow cream belt; elderly craftsman age60 in brown linen with gray beard; adult elephant caretaker age40 in sand-colored robe. Neutral front three-quarter poses, natural hands, no contact, no weapons, no headgear obscuring faces. Plain background only, professional film costume concept sheet, consistent scale except child shorter. No labels.
+
+### CC-SCALE / v001
+
+Use case: historical-scene. Original cinematic educational concept illustration, landscape 16:9, painterly realism rather than photograph, late Eastern Han China imagined river dock, weathered dark wood, misty jade teal water, warm muted linen and brass highlights, soft natural light, film composition, no readable text, numbers, logos, watermarks, subtitles or UI. No modern tools, no imperial dragon crown, no violence, no animal danger. These are teaching reenactments, not archaeological reconstruction. Close view across a sturdy workshop table beside the river. An elderly Chinese craftsman in plain brown cross-collar robe with gray beard calmly examines a small wooden balance model, wooden support, one rounded model weight; young boy in blue-green robe at opposite side looks thoughtfully, not foolish or frightened. The toy-scale model is obviously tabletop sized, there is NO elephant on any scale, no breaking wood. Focus on the beam joint and craftsman's gesture, shallow depth of field, empty lower subtitle safe area.
+
+### CC-SPLIT / v001
+
+Use case: historical-scene. Original cinematic educational concept illustration, landscape 16:9, painterly realism rather than photograph, late Eastern Han China imagined river dock, weathered dark wood, misty jade teal water, warm muted linen and brass highlights, soft natural light, film composition, no readable text, numbers, logos, watermarks, subtitles or UI. No modern tools, no imperial dragon crown, no violence, no animal danger. These are teaching reenactments, not archaeological reconstruction. Over-shoulder close shot of a young Chinese boy wearing blue-green cross-collar robe at the riverside table. Three palm-sized wooden blocks are laid in a clear row beside an empty shallow bronze scale pan and a simple wooden balance. Adult craftsman's hand carefully moves ONE block next to the others, demonstrating small objects that can be weighed separately. No writing, no numeric labels. Child's thoughtful profile at left, neat objects across center. Warm morning light, quiet discovery.
+
+### CC-OBSERVE / v001
+
+Use case: historical-scene. Original cinematic educational concept illustration, landscape 16:9, painterly realism rather than photograph, late Eastern Han China imagined river dock, weathered dark wood, misty jade teal water, warm muted linen and brass highlights, soft natural light, film composition, no readable text, numbers, logos, watermarks, subtitles or UI. No modern tools, no imperial dragon crown, no violence, no animal danger. These are teaching reenactments, not archaeological reconstruction. Wide low eye-level riverside composition: an adult boatman in dark slate linen stands still alone near the center of a broad low wooden barge afloat on jade water close to dock; a young boy in simple blue-green robe watches from dry dock with hands relaxed. Water clearly contacts hull with realistic partial submersion, no floating in air, no taut vertical rope lifting boat. Show only ONE moment, not diagrams or split screen; water reflections and hull texture emphasized, quiet insightful mood.
+
+### CC-MATERIALS / v001
+
+Use case: historical-scene. Original cinematic educational concept illustration, landscape 16:9, painterly realism rather than photograph, late Eastern Han China imagined river dock, weathered dark wood, misty jade teal water, warm muted linen and brass highlights, soft natural light, film composition, no readable text, numbers, logos, watermarks, subtitles or UI. No modern tools, no imperial dragon crown, no violence, no animal danger. These are teaching reenactments, not archaeological reconstruction. Deliberately arranged still life on riverside wooden sorting table: four rounded grey river stones on a woven mat, two securely sealed neutral linen sacks beside them, a small wooden pail on far right with a subtle wet patch beneath it. Adult hands visible at far edge only. Quiet visual comparison of stable objects and something that leaks. No faces, no labels, no scale marks or numbers, no modern packaging. Warm sidelight and green out-of-focus water.
+
+### CC-LEDGER / v001
+
+Use case: historical-scene. Original cinematic educational concept illustration, landscape 16:9, painterly realism rather than photograph, late Eastern Han China imagined river dock, weathered dark wood, misty jade teal water, warm muted linen and brass highlights, soft natural light, film composition, no readable text, numbers, logos, watermarks, subtitles or UI. No modern tools, no imperial dragon crown, no violence, no animal danger. These are teaching reenactments, not archaeological reconstruction. Cinematic overhead close shot of a weathered wooden table beside jade river. Four small neat groups of wooden counting rods beside four distinct river stones, a blank warm paper sheet, brush lying at side, adult hands gently align one stone with its group. Every object clearly separated for educational visual storytelling but NOT a scientific measurement diagram; absolutely no writing or numerals. Warm diagonal sunlight with ample calm negative space, film still.
+
+### CC-REPORT / v001
+
+Use case: historical-scene. Original cinematic educational concept illustration, landscape 16:9, painterly realism rather than photograph, late Eastern Han China imagined river dock, weathered dark wood, misty jade teal water, warm muted linen and brass highlights, soft natural light, film composition, no readable text, numbers, logos, watermarks, subtitles or UI. No modern tools, no imperial dragon crown, no violence, no animal danger. These are teaching reenactments, not archaeological reconstruction. Wide calm riverside tableau: young boy in blue-green robe stands behind a low table showing blank sheets and stones to three attentive adults in plain brown and slate linen clothing. Viewer sees adults predominantly from the back; a calm elephant and sand-robed caretaker rest far background on broad dry shore. No crown, no throne, no acclaim or cheering, the shared table and observable evidence are the focal point. Soft afternoon light, mutual respect and quiet inquiry.
+
+### CC-E1 / v001
+
+Use case: historical-scene. Original cinematic educational concept illustration, landscape 16:9, painterly realism rather than photograph, late Eastern Han China imagined river dock, weathered dark wood, misty jade teal water, warm muted linen and brass highlights, soft natural light, film composition, no readable text, numbers, logos, watermarks, subtitles or UI. No modern tools, no imperial dragon crown, no violence, no animal danger. These are teaching reenactments, not archaeological reconstruction. Close still life at river dock, a neatly laid blank open record sheet, four orderly groups of counting rods and stone samples. Two different adult hands at opposite corners point carefully to matching objects as if independently checking the procedure. Green water and the side of a stable wooden boat softly visible behind. Bright soft afternoon light, modest satisfaction, reproducible evidence. No writing or numeric labels.
+
+### CC-E2 / v001
+
+Use case: historical-scene. Original cinematic educational concept illustration, landscape 16:9, painterly realism rather than photograph, late Eastern Han China imagined river dock, weathered dark wood, misty jade teal water, warm muted linen and brass highlights, soft natural light, film composition, no readable text, numbers, logos, watermarks, subtitles or UI. No modern tools, no imperial dragon crown, no violence, no animal danger. These are teaching reenactments, not archaeological reconstruction. Close cinematic still life of TWO clearly separate blank warm paper record sheets: one older slightly creased sheet sits partly underneath a newer clean sheet, a brush lies beside them and a small river stone anchors the corner. An adult hand gently preserves the old sheet instead of throwing it away. Riverside wooden worktable, late-afternoon brass light, jade shadow, quiet thoughtful correction. No readable or pseudo text, no numbers, no red X stamps.
+
+### CC-E3 / v001
+
+Use case: historical-scene. Original cinematic educational concept illustration, landscape 16:9, painterly realism rather than photograph, late Eastern Han China imagined river dock, weathered dark wood, misty jade teal water, warm muted linen and brass highlights, soft natural light, film composition, no readable text, numbers, logos, watermarks, subtitles or UI. No modern tools, no imperial dragon crown, no violence, no animal danger. These are teaching reenactments, not archaeological reconstruction. Wide tranquil wooden dock at late afternoon. An empty stable broad wooden barge floats with hull in contact with jade water, simple weighing apparatus has been set aside on dry dock with a blank open notebook. Two figures in plain linen seen only from the back leave the table ready for another observation. Gentle open-ended warm light, inquiry continues, no sadness, failure or triumph, no words.
+
+### CC-E4 / v001
+
+Use case: historical-scene. Original cinematic educational concept illustration, landscape 16:9, painterly realism rather than photograph, late Eastern Han China imagined river dock, weathered dark wood, misty jade teal water, warm muted linen and brass highlights, soft natural light, film composition, no readable text, numbers, logos, watermarks, subtitles or UI. No modern tools, no imperial dragon crown, no violence, no animal danger. These are teaching reenactments, not archaeological reconstruction. Two blank cream configuration cards lying side by side on a riverside worktable; one unmarked small human-shaped wooden token lies beside one card, the other position clearly empty. An adult boatman's hand in a slate linen cuff points to the difference, no accusing gesture, no red warning symbol. Stones and quiet water softly in background; invitation to compare the missing load, not to mock someone. No generated drawings or writing on cards.
+
+### CC-BOARDING / v002
+
+Use case: historical-scene. Original cinematic educational concept illustration, landscape 16:9, painterly realism rather than photograph, late Eastern Han China imagined river dock, weathered dark wood, misty jade teal water, warm muted linen and brass highlights, soft natural light, film composition, no readable text, numbers, logos, watermarks, subtitles or UI. No modern tools, no imperial dragon crown, no violence, no animal danger. These are teaching reenactments, not archaeological reconstruction. Broad side view of a calm Asian elephant STANDING FULLY ON a stable very broad wooden cargo barge. Exactly ONE adult man on that boat: the boatman in dark slate linen at stern, no other people aboard. The elephant caretaker in sand robe STANDS ON THE DRY DOCK in the right foreground separated from barge by water, watching attentively; the blue-green robed boy is also on dock beside him, safely away from the edge. Calm elephant, no rope pulling, substantial hull partly submerged with flat calm water touching side. No motion, no dramatic boarding, no extra cargo piles. Shot communicates boat, elephant, one boatman. Realistic safe scale.
+
+### CC-STUDY / v002
+
+Use case: illustration-story. Cinematic painterly realistic still life, landscape16:9. A clearly CONTEMPORARY PRIMARY SCHOOL CLASSROOM in China, bright pale walls, defocused MODERN green chalkboard without writing and modern empty classroom chairs in background. Foreground modern light wood school desk: a small plain toy boat freely afloat in a shallow transparent water tray, two simple wooden block weights resting beside tray, a CLOSED plain blue book and five blank cream rectangular learning cards. No historical buildings or costumes, no river dock, no calligraphy brush, no decorative antique ship. Soft morning light, restrained jade teal, cream, natural wood colors, modern classroom laboratory epilogue. No people, no writing or numbers, no readable text, no watermarks. The toy boat has a simple low hull, no sails, lower hull submerged, no air gap.
+
+首版两图提示词保留在[image-prompts.md](image-prompts.md)。原始生成路径与提示词见[generation-record-v0.2.json](../media/generation-record-v0.2.json)，校验摘要见[catalog.json](../media/catalog.json)。图库可点击原图查看，不以缩略图替代审片。

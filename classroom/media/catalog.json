@@ -1,0 +1,301 @@
+{
+  "version": "1.8",
+  "generator": "built-in image_gen",
+  "note": "当前采用图及视频前期资产。",
+  "assets": [
+    {
+      "id": "CC-HARBOR",
+      "file": "artwork/CC-HARBOR-v002.png",
+      "role": "码头主视觉",
+      "status": "adopted",
+      "scientificEvidence": false,
+      "promptDocument": "../docs/08-art-direction.md",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2493120,
+      "sha256": "3863bf100db91b8233c105a3bc70c3785f69ea47a25895fed5a4c4e89cfb4fbd",
+      "shots": [
+        "C-V01"
+      ],
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    },
+    {
+      "id": "CC-WATER",
+      "file": "artwork/CC-WATER-v001.png",
+      "role": "船与水氛围特写",
+      "status": "adopted",
+      "scientificEvidence": false,
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。",
+      "promptDocument": "../docs/08-art-direction.md",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2545537,
+      "sha256": "c4ca36a3f341a0a69a5a8e81e5ad4e97e3ed8fd9f09f4ef1dafb9a58c47e526f",
+      "shots": [
+        "C-V04"
+      ]
+    },
+    {
+      "id": "CC-CHARACTERS",
+      "file": "artwork/CC-CHARACTERS-v001.png",
+      "role": "主要人物参考",
+      "status": "adopted",
+      "scientificEvidence": false,
+      "promptDocument": "../docs/08-art-direction.md",
+      "generation": "built-in image_gen",
+      "continuity": "概念采用；人脸、衣摆、船型严格跨镜连续性待成片复核",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2500106,
+      "sha256": "8e78f3e5dec05ecf97b3d1e941cfdacc13ce768045ce526b1f7869a96e0df48c",
+      "shots": [],
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    },
+    {
+      "id": "CC-SCALE",
+      "file": "artwork/CC-SCALE-v001.png",
+      "role": "大秤的小模型",
+      "status": "adopted",
+      "scientificEvidence": false,
+      "promptDocument": "../docs/08-art-direction.md",
+      "generation": "built-in image_gen",
+      "continuity": "概念采用；人脸、衣摆、船型严格跨镜连续性待成片复核",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2403219,
+      "sha256": "803adbd65a88096aa52f9bcec26cedc609491f6fcbf22332a8267d083552f5ed",
+      "shots": [
+        "C-V02A"
+      ],
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    },
+    {
+      "id": "CC-SPLIT",
+      "file": "artwork/CC-SPLIT-v002.png",
+      "role": "分称合计",
+      "status": "adopted",
+      "scientificEvidence": false,
+      "promptDocument": "../docs/08-art-direction.md",
+      "generation": "built-in image_gen",
+      "continuity": "概念采用；人脸、衣摆、船型严格跨镜连续性待成片复核",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2351256,
+      "sha256": "ed8347fe5331bab656e687f6e488fc6c913ff58026d19686508f23a811002d32",
+      "shots": [
+        "C-V02B"
+      ],
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    },
+    {
+      "id": "CC-MATERIALS",
+      "file": "artwork/CC-MATERIALS-v001.png",
+      "role": "替代物的选择",
+      "status": "adopted",
+      "scientificEvidence": false,
+      "promptDocument": "../docs/08-art-direction.md",
+      "generation": "built-in image_gen",
+      "continuity": "概念采用；人脸、衣摆、船型严格跨镜连续性待成片复核",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2658307,
+      "sha256": "244641a3b5d8b41360c78bb4f4b519cdf6c9edac3b0ddc960b90c4b9a42522ad",
+      "shots": [
+        "C-V06"
+      ],
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    },
+    {
+      "id": "CC-LEDGER",
+      "file": "artwork/CC-LEDGER-v001.png",
+      "role": "每一批的来处",
+      "status": "adopted",
+      "scientificEvidence": false,
+      "promptDocument": "../docs/08-art-direction.md",
+      "generation": "built-in image_gen",
+      "continuity": "概念采用；人脸、衣摆、船型严格跨镜连续性待成片复核",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2367463,
+      "sha256": "72b948d2cd63386cf54214e4ec6fa8c9aaf1d5efc3c5c76b9a6042d92151a088",
+      "shots": [
+        "C-V08"
+      ],
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    },
+    {
+      "id": "CC-REPORT",
+      "file": "artwork/CC-REPORT-v001.png",
+      "role": "把依据摆在众人面前",
+      "status": "adopted",
+      "scientificEvidence": false,
+      "promptDocument": "../docs/08-art-direction.md",
+      "generation": "built-in image_gen",
+      "continuity": "概念采用；人脸、衣摆、船型严格跨镜连续性待成片复核",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2438139,
+      "sha256": "fe54480b0a0b9f307c2a6a1006b850313dacdbe315fe930883363fe7a4ca9603",
+      "shots": [
+        "C-V10"
+      ],
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    },
+    {
+      "id": "CC-E1",
+      "file": "artwork/CC-E1-v001.png",
+      "role": "人人看得懂的一线",
+      "status": "adopted",
+      "scientificEvidence": false,
+      "promptDocument": "../docs/08-art-direction.md",
+      "generation": "built-in image_gen",
+      "continuity": "概念采用；人脸、衣摆、船型严格跨镜连续性待成片复核",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2419599,
+      "sha256": "ba571aa4573a4de2b7294bd153be18194ce9a037deebca478626ccaa28c7351c",
+      "shots": [
+        "C-VE1"
+      ],
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    },
+    {
+      "id": "CC-E2",
+      "file": "artwork/CC-E2-v001.png",
+      "role": "复测之后",
+      "status": "adopted",
+      "scientificEvidence": false,
+      "promptDocument": "../docs/08-art-direction.md",
+      "generation": "built-in image_gen",
+      "continuity": "概念采用；人脸、衣摆、船型严格跨镜连续性待成片复核",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2178768,
+      "sha256": "e3271b1b17ee1ccc954eb1230d8cf729e51a264022ba4f2cf7a4da11fa630453",
+      "shots": [
+        "C-V09",
+        "C-VE2"
+      ],
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    },
+    {
+      "id": "CC-E3",
+      "file": "artwork/CC-E3-v001.png",
+      "role": "还差一次验证",
+      "status": "adopted",
+      "scientificEvidence": false,
+      "promptDocument": "../docs/08-art-direction.md",
+      "generation": "built-in image_gen",
+      "continuity": "概念采用；人脸、衣摆、船型严格跨镜连续性待成片复核",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2630842,
+      "sha256": "b0a2f9e7ca074defabfa5caa896b0e358de0f02fbef846c4f101fbd6c5af7eca",
+      "shots": [
+        "C-VE3"
+      ],
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    },
+    {
+      "id": "CC-E4",
+      "file": "artwork/CC-E4-v001.png",
+      "role": "水线还需要解释",
+      "status": "adopted",
+      "scientificEvidence": false,
+      "promptDocument": "../docs/08-art-direction.md",
+      "generation": "built-in image_gen",
+      "continuity": "概念采用；人脸、衣摆、船型严格跨镜连续性待成片复核",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2222786,
+      "sha256": "9b2ce089933c5427dfd0ba89c44a4e95794f93e22719dec0a4b7e4e0d28f78a3",
+      "shots": [
+        "C-VE4"
+      ],
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    },
+    {
+      "id": "CC-BOARDING",
+      "file": "artwork/CC-BOARDING-v002.png",
+      "role": "稳船留线",
+      "status": "adopted",
+      "scientificEvidence": false,
+      "promptDocument": "../docs/08-art-direction.md",
+      "generation": "built-in image_gen",
+      "continuity": "概念采用；人脸、衣摆、船型严格跨镜连续性待成片复核",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2460529,
+      "sha256": "497caf178290bfe51d18af0c66b744808e897b353e3e2ba0e4b4b3db3ed034d1",
+      "shots": [
+        "C-V05"
+      ],
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    },
+    {
+      "id": "CC-STUDY",
+      "file": "artwork/CC-STUDY-v003.png",
+      "role": "从故事回到课堂",
+      "status": "adopted",
+      "scientificEvidence": false,
+      "promptDocument": "../docs/08-art-direction.md",
+      "generation": "built-in image_gen",
+      "continuity": "概念采用；人脸、衣摆、船型严格跨镜连续性待成片复核",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1797118,
+      "sha256": "fe0fe268b7b411b88c0c9a8cf668f8cb2cd550044991e71d223c765ece630389",
+      "shots": [
+        "C-V11",
+        "C-L01",
+        "C-L02"
+      ],
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    },
+    {
+      "id": "CC-UNLOADED",
+      "role": "同船换载入场：象已下船",
+      "file": "artwork/CC-UNLOADED-v001.png",
+      "shots": [
+        "C-V07"
+      ],
+      "status": "adopted",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2264182,
+      "sha256": "e6bba070007b20c80dee744a7f08b859caf106b740631cc4cb529055dac59e90",
+      "promptDocument": "../docs/08-art-direction.md",
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    },
+    {
+      "id": "CC-POND",
+      "role": "同一模型桌：水盆预测入口",
+      "file": "artwork/CC-POND-v001.png",
+      "shots": [
+        "C-V03"
+      ],
+      "status": "adopted",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2325728,
+      "sha256": "9290b7dc616b2a97467bd45e661d562daba38818059a644410c1fcabcb54a3aa",
+      "promptDocument": "../docs/08-art-direction.md",
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    },
+    {
+      "id": "CC-BOOK-TRIAL",
+      "role": "实验版：书箱与工具的新问题",
+      "file": "artwork/CC-BOOK-TRIAL-v001.png",
+      "shots": [
+        "C-L03"
+      ],
+      "status": "adopted",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1868401,
+      "sha256": "030e4870c977b06704f061804701a053a34d3e51241dde552b67d4fa533577f5",
+      "promptDocument": "../docs/08-art-direction.md",
+      "notes": "按所绑定镜卡的入场、接出与连续性要求制作。"
+    }
+  ]
+}

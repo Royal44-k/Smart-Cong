@@ -1,0 +1,26 @@
+import {stillElement} from './media.mjs';
+import {repairCases} from './workshop-state.mjs';
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const button=(type,value,text,extra='')=>'<button data-play="'+type+'" data-value="'+value+'" '+extra+'>'+text+'</button>';
+export const storyPages=[
+ {word:'先',title:'请大象上船',image:'boarding',prompt:'谁先上船？要等到什么时候？',question:'船还在晃，能马上画记号吗？',reference:'让大象上船，等船停稳、水面平静。'},
+ {word:'再',title:'留住这一道水线',image:'reference',prompt:'记号画在哪里？它要记住什么？',question:'为什么不把记号画在浪花上？',reference:'沿着平静的水面，在船身上画一道线。'},
+ {word:'然后',title:'石头接过大象的位置',image:'load',prompt:'大象上岸后，怎样放石头？还要看看谁？',question:'水线对上了，阿舟的位置不同，可以直接比吗？',reference:'让象上岸，换上石头，对好水线，还要核对阿舟和其他物品。'},
+ {word:'最后',title:'把每一份记清楚',image:'ledger',prompt:'石头怎样称？怎样知道合起来有多重？',question:'有一堆石头没记下来，会发生什么？',reference:'把石头分开称，每一份记一次，再把重量加起来。'}
+];
+export function storyStudio(s){
+ const w=s.learning.workshop,p=storyPages[w.page],written=w.captions.filter(t=>t.trim()).length;
+ return '<section class="story-studio" aria-labelledby="studio-title"><div class="studio-heading"><div><p class="eyebrow">故事由我来讲</p><h2 id="studio-title">翻一页，说一句</h2></div><span data-written-pages>已写下 '+written+' / 4 页</span></div><p>点小图翻页。可以讲给同桌听，也可以把自己的话写进小书。</p><div class="story-page-tabs" role="group" aria-label="选择故事页">'+storyPages.map((p,i)=>button('book-page',i,stillElement(p.image)+'<span>'+p.word+'</span>','class="story-page-tab" aria-pressed="'+(i===w.page)+'" aria-label="第'+(i+1)+'页：'+p.title+'"')).join('')+'</div><div class="retell-stage"><figure>'+stillElement(p.image)+'<figcaption><span>第 '+(w.page+1)+' / 4 页</span><h3>'+p.word+'，'+p.title+'</h3></figcaption></figure><div class="retell-script"><p class="story-cue">'+p.prompt+'</p><label for="page-caption">这一页，我想这样讲</label><textarea id="page-caption" data-caption-page="'+w.page+'" rows="5" maxlength="160" aria-describedby="caption-help" placeholder="用自己的话写一句，也可以先说一说。">'+esc(w.captions[w.page])+'</textarea><p id="caption-help" class="caption-help"><span data-caption-count>'+w.captions[w.page].length+' / 160 字</span><span data-caption-status role="status">写的话会跟着本次学习记录保存。</span></p><details class="story-reference"><summary>卡住了，看看参考讲法</summary><p>'+p.word+'，'+p.reference+'</p></details><details class="peer-question"><summary>请同桌问我一个问题</summary><p>'+p.question+'</p><small>先说你的想法，再一起看看前面的线索。</small></details></div></div><div class="story-page-nav">'+button('book-prev','','← 前一页',w.page===0?'disabled':'')+'<span>'+p.word+' → '+(storyPages[w.page+1]?.word||'把故事讲完整')+'</span>'+button('book-next','','后一页 →',w.page===3?'disabled':'')+'</div></section>';
+}
+export function storyPrintPages(s){
+ return '<div class="print-book">'+storyPages.map((p,i)=>'<article>'+stillElement(p.image)+'<h2>'+p.word+' · '+p.title+'</h2><p><b>我的话：</b>'+(s.learning.workshop.captions[i].trim()?esc(s.learning.workshop.captions[i]).replaceAll('\n','<br>'):'<span class="caption-blank"></span>')+'</p><p class="print-reference"><b>参考讲法：</b>'+p.reference+'</p></article>').join('')+'</div>';
+}
+const describe=t=>t.weight+'块木块 · 小人'+(t.crew?'在船上':'在岸上')+' · '+(t.free?'船底不碰底':'船底碰到底');
+export function repairView(s,draw){
+ const r=s.learning.workshop.repair,c=repairCases[r.case],done=!!r.records[r.case],lock=done?'disabled':'';
+ return '<details class="repair-workshop"><summary><span>实验修理铺</span><small>可选挑战 · 已修好 '+r.records.length+' / 3 组</small></summary><div class="repair-heading"><p class="eyebrow">小象请你帮个忙 / 第 '+(r.case+1)+' 组</p><h2>'+c.title+'</h2><p>'+c.goal+'</p></div><div class="repair-pair"><div>'+draw(c.A,'A栏 · 留作参照')+'<p>'+describe(c.A)+'</p></div><div>'+draw(r.B,'B栏 · 由你来修')+'<p>'+describe(r.B)+'</p></div></div><fieldset class="repair-controls"><legend>动手调一调B栏</legend><div class="repair-weight"><span>木块</span>'+[1,2,3,4,5].map(n=>button('repair-weight',n,n+'块',lock+' aria-pressed="'+(r.B.weight===n)+'"')).join('')+'</div><div class="repair-toggles">'+button('repair-crew','',r.B.crew?'让小人上岸':'让小人上船',lock)+button('repair-depth','',r.B.free?'把水调浅':'把水调深',lock)+'</div></fieldset><fieldset class="repair-reason"><legend>为什么这样比较？</legend>'+button('repair-reason','one','只改变要研究的那一项，其他条件一样。',lock+' aria-pressed="'+(r.reason==='one')+'"')+button('repair-reason','same','把两次摆得完全一样，就能看出变化。',lock+' aria-pressed="'+(r.reason==='same')+'"')+'</fieldset>'+(r.message?'<p class="repair-feedback" data-mood="'+r.mood+'" role="status">'+esc(r.message)+'</p>':'')+'<div class="repair-actions">'+(done?(r.case<2?button('repair-next','','接下一组委托 →','class="primary"'):'<p class="repair-complete">三组都修好啦！挑一组，把“改了什么、保留什么”讲给伙伴听。</p>'):button('repair-check','','摆好了，检查一下','class="primary"'))+button('repair-reset','','重摆这一组','class="text-button"')+'</div><p class="repair-note">这是练手的小挑战。你自己设计的A、B记录一直保留在上面的实验桌。</p></details>';
+}
+export function repairSummary(s){
+ const r=s.learning.workshop.repair;if(!r.records.length)return '';
+ return '<section class="repair-summary"><h2>我修好的比较</h2><p>这些是练手记录，和我自己设计的试验分开保存。</p>'+r.records.map(v=>{const c=repairCases[v.case];return '<article><h3>'+c.title+'</h3><p>原来的B：'+describe(c.B)+'<br>我改后的B：'+describe(v.B)+'</p><p>我的依据：只改变'+({mass:'木块数量',crew:'小人位置',bottom:'水的深浅'})[c.question]+'，其他条件保持一样。</p></article>';}).join('')+'</section>';
+}

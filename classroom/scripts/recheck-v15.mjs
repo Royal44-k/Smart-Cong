@@ -1,0 +1,9 @@
+import fs from'node:fs';import{spawnSync}from'node:child_process';
+const result=JSON.parse(fs.readFileSync('artifacts/acceptance-v15.json','utf8'));result.finalFix='显式区分指针与键盘输入；触控不跳页，键盘避开固定步骤与完整伙伴';
+for(const name of ['exploration-browser.mjs','learning-accessibility-browser.mjs','keyboard-browser.mjs','play-touch-browser.mjs','workshop-browser.mjs']){
+const r=spawnSync(process.execPath,['tests/'+name],{encoding:'utf8',timeout:180000}),log=(r.stdout||'')+(r.stderr||'');
+const path='artifacts/v15-verification/'+name+'.txt';if(name==='exploration-browser.mjs'&&fs.existsSync(path))fs.copyFileSync(path,'artifacts/v15-verification/before-touch-fix.txt');fs.writeFileSync(path,log);
+const entry={name,exitCode:r.status,checks:(r.stdout?.match(/^PASS /gm)||[]).length,log:path,recheckedAfterFinalFix:true};const i=result.runs.findIndex(x=>x.name===name);result.runs[i]=entry;fs.writeFileSync('artifacts/acceptance-v15.json',JSON.stringify(result,null,2)+'\n');console.log(name+': '+(r.status===0?'PASS':'FAIL')+' / '+entry.checks);if(r.status!==0){console.log(log);process.exit(1);}
+}
+const touch=spawnSync(process.execPath,['tests/workshop-touch-browser.mjs'],{encoding:'utf8',timeout:120000});fs.writeFileSync('artifacts/v15-verification/workshop-touch.txt',(touch.stdout||'')+(touch.stderr||''));if(touch.status!==0){console.log(touch.stdout,touch.stderr);process.exit(1);}
+result.supplementalTouch=true;result.unitTests=Number(fs.readFileSync('artifacts/v15-verification/unit.txt','utf8').match(/tests (\d+)/)?.[1]);result.browserChecks=result.runs.reduce((n,r)=>n+r.checks,0);result.allPassed=result.runs.every(r=>r.exitCode===0);result.completedAt=new Date().toISOString();fs.writeFileSync('artifacts/acceptance-v15.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({allPassed:result.allPassed,unitTests:result.unitTests,browserChecks:result.browserChecks}));

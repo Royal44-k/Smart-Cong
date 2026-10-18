@@ -1,0 +1,38 @@
+{
+  "version": "1.2.0",
+  "kind": "interface-companion-sheets",
+  "layout": {
+    "columns": 2,
+    "rows": 2,
+    "order": [
+      "idle",
+      "thinking",
+      "happy",
+      "encourage"
+    ]
+  },
+  "assets": [
+    {
+      "id": "CC-CAO-EXPRESSIONS",
+      "file": "CC-CAO-EXPRESSIONS-v001.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 945488,
+      "sha256": "6f5c082967d32210a924398fb7e61d04b8cc8e3af226117beefea965bb3b3567",
+      "mode": "story",
+      "promptFile": "prompts.json",
+      "status": "adopted"
+    },
+    {
+      "id": "CC-ELEPHANT-EXPRESSIONS",
+      "file": "CC-ELEPHANT-EXPRESSIONS-v001.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1591775,
+      "sha256": "21183b974b03652b06e0c0397847db589f3843cd3bfa16f01579edef3879882a",
+      "mode": "lab",
+      "promptFile": "prompts.json",
+      "status": "adopted"
+    }
+  ]
+}

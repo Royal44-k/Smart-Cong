@@ -1,0 +1,130 @@
+{
+  "version": "1.6.0",
+  "date": "2026-10-12T07:01:59.582Z",
+  "environment": "Node.js v24.20.0 / Playwright / Microsoft Edge / Windows",
+  "runs": [
+    {
+      "name": "unit",
+      "exitCode": 0,
+      "seconds": 0.5,
+      "checks": 0,
+      "log": "artifacts/v16-verification/unit.txt"
+    },
+    {
+      "name": "learning-browser.mjs",
+      "exitCode": 0,
+      "seconds": 21.6,
+      "checks": 10,
+      "log": "artifacts/v16-verification/learning-browser.mjs.txt"
+    },
+    {
+      "name": "learning-accessibility-browser.mjs",
+      "exitCode": 0,
+      "seconds": 5.4,
+      "checks": 5,
+      "log": "artifacts/v16-verification/learning-accessibility-browser.mjs.txt"
+    },
+    {
+      "name": "browser.mjs",
+      "exitCode": 0,
+      "seconds": 12.4,
+      "checks": 9,
+      "log": "artifacts/v16-verification/browser.mjs.txt"
+    },
+    {
+      "name": "edge-browser.mjs",
+      "exitCode": 0,
+      "seconds": 7.5,
+      "checks": 5,
+      "log": "artifacts/v16-verification/edge-browser.mjs.txt"
+    },
+    {
+      "name": "geometry-browser.mjs",
+      "exitCode": 0,
+      "seconds": 2.3,
+      "checks": 1,
+      "log": "artifacts/v16-verification/geometry-browser.mjs.txt"
+    },
+    {
+      "name": "keyboard-browser.mjs",
+      "exitCode": 0,
+      "seconds": 2.6,
+      "checks": 2,
+      "log": "artifacts/v16-verification/keyboard-browser.mjs.txt"
+    },
+    {
+      "name": "production-browser.mjs",
+      "exitCode": 0,
+      "seconds": 3.8,
+      "checks": 7,
+      "log": "artifacts/v16-verification/production-browser.mjs.txt"
+    },
+    {
+      "name": "audio-browser.mjs",
+      "exitCode": 0,
+      "seconds": 3.6,
+      "checks": 4,
+      "log": "artifacts/v16-verification/audio-browser.mjs.txt"
+    },
+    {
+      "name": "production-details-browser.mjs",
+      "exitCode": 0,
+      "seconds": 4.2,
+      "checks": 2,
+      "log": "artifacts/v16-verification/production-details-browser.mjs.txt"
+    },
+    {
+      "name": "play-companion-browser.mjs",
+      "exitCode": 0,
+      "seconds": 14.2,
+      "checks": 12,
+      "log": "artifacts/v16-verification/play-companion-browser.mjs.txt"
+    },
+    {
+      "name": "play-touch-browser.mjs",
+      "exitCode": 0,
+      "seconds": 3.7,
+      "checks": 5,
+      "log": "artifacts/v16-verification/play-touch-browser.mjs.txt"
+    },
+    {
+      "name": "legacy-drag-browser.mjs",
+      "exitCode": 0,
+      "seconds": 2.7,
+      "checks": 1,
+      "log": "artifacts/v16-verification/legacy-drag-browser.mjs.txt"
+    },
+    {
+      "name": "reasoning-browser.mjs",
+      "exitCode": 0,
+      "seconds": 18.5,
+      "checks": 11,
+      "log": "artifacts/v16-verification/reasoning-browser.mjs.txt"
+    },
+    {
+      "name": "workshop-browser.mjs",
+      "exitCode": 0,
+      "seconds": 15.9,
+      "checks": 13,
+      "log": "artifacts/v16-verification/workshop-browser.mjs.txt"
+    },
+    {
+      "name": "exploration-browser.mjs",
+      "exitCode": 0,
+      "seconds": 14.9,
+      "checks": 13,
+      "log": "artifacts/v16-verification/exploration-browser.mjs.txt"
+    },
+    {
+      "name": "transfer-bridge-browser.mjs",
+      "exitCode": 0,
+      "seconds": 13.1,
+      "checks": 14,
+      "log": "artifacts/v16-verification/transfer-bridge-browser.mjs.txt"
+    }
+  ],
+  "allPassed": true,
+  "unitTests": 105,
+  "browserChecks": 114,
+  "recheckNote": "仅更新旧workshop浏览器测试写死的目标revision5为当前revision；应用代码未改变。保留原失败日志，继续剩余3组。"
+}

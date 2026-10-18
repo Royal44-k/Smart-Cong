@@ -1,0 +1,231 @@
+{
+  "title": "曹冲称象：一线之差",
+  "exportedAt": "2026-10-12T08:31:21.962Z",
+  "note": "本课实验数据与学习过程记录。",
+  "inProgress": false,
+  "state": {
+    "version": 3,
+    "learning": {
+      "revision": 7,
+      "peer": {
+        "story": {
+          "hidden": 1,
+          "stage": "make",
+          "guess": null,
+          "reason": null,
+          "peeked": false,
+          "message": "",
+          "mood": "idle",
+          "checked": null,
+          "records": []
+        },
+        "lab": {
+          "total": 320,
+          "tool": 20,
+          "position": "first",
+          "stage": "make",
+          "relation": null,
+          "answer": "",
+          "peeked": false,
+          "message": "",
+          "mood": "idle",
+          "checked": null,
+          "records": []
+        }
+      },
+      "bridge": {
+        "memory": "now",
+        "tools": null,
+        "checked": false
+      },
+      "workshop": {
+        "page": 2,
+        "captions": [
+          "先，让大象慢慢上船。",
+          "再，把平静的水面位置留在船身上。",
+          "<img src=x onerror=alert(1)>\n然后，我请阿舟回船。",
+          ""
+        ],
+        "repair": {
+          "case": 0,
+          "B": {
+            "weight": 3,
+            "crew": true,
+            "free": true
+          },
+          "reason": null,
+          "records": [],
+          "message": "",
+          "mood": "idle"
+        }
+      },
+      "reasoning": {
+        "required": true,
+        "evidence": [],
+        "observation": null,
+        "reflection": null,
+        "boats": [],
+        "group": null,
+        "message": "",
+        "mood": "idle"
+      },
+      "play": {
+        "round": 0,
+        "solved": [],
+        "message": ""
+      },
+      "enabled": true,
+      "story": {
+        "seen": [],
+        "guess": null,
+        "water": 0,
+        "waterSeen": [],
+        "line": null,
+        "stamp": null,
+        "book": [
+          "elephant",
+          "mark",
+          "replace",
+          "weigh"
+        ],
+        "words": {
+          "motion": "sink",
+          "object": "elephant"
+        },
+        "endingPlan": null
+      },
+      "lab": {
+        "question": null,
+        "hypothesis": null,
+        "plan": null,
+        "weight": 1,
+        "crew": false,
+        "free": true,
+        "samples": {
+          "A": null,
+          "B": null
+        },
+        "finding": null,
+        "history": [],
+        "transferNumber": "",
+        "transferReason": null
+      },
+      "message": "",
+      "hints": {}
+    },
+    "inquiry": {
+      "role": "observer",
+      "hints": {},
+      "modelBlock": 0,
+      "modelUnits": 0,
+      "modelReadings": [
+        false,
+        false,
+        false
+      ],
+      "support": 2,
+      "scaleTrials": [],
+      "prediction": null,
+      "pondEvidence": [],
+      "trials": [],
+      "observation": null,
+      "material": "stone",
+      "materialChecks": {
+        "stone": 0,
+        "bag": 0,
+        "leak": 0
+      },
+      "weighed": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "activeBatch": null,
+      "configFound": [],
+      "reportReason": "total",
+      "transfer": null,
+      "feedback": ""
+    },
+    "journey": "full",
+    "narrative": {
+      "prologue": null,
+      "scaleChecked": false,
+      "smallWeighed": [],
+      "poolWeights": 0,
+      "poolPrediction": null,
+      "poolFree": false,
+      "referenceChoice": null,
+      "referenceAttempts": [],
+      "materialsTried": [],
+      "materialConfirmed": false,
+      "reviewChoice": null,
+      "sequence": [],
+      "classifications": {
+        "method": null,
+        "crew": null,
+        "number": null
+      },
+      "sourceChecked": false,
+      "sourceAttempts": 0
+    },
+    "mode": "story",
+    "phase": "reflect",
+    "route": null,
+    "referenceCaptured": true,
+    "crewPresent": true,
+    "cargo": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "counts": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "calm": true,
+    "balanced": true,
+    "free": true,
+    "accountCrew": false,
+    "claimedMass": 2700,
+    "substitute": "stone",
+    "drafts": [],
+    "firstEnding": "E1",
+    "ending": "E1",
+    "reflections": [
+      "",
+      "",
+      ""
+    ],
+    "trail": [
+      {
+        "at": "2026-10-12T08:31:21.532Z",
+        "text": "我的操作：翻看故事后一页"
+      },
+      {
+        "at": "2026-10-12T08:31:21.779Z",
+        "text": "我的操作：翻看故事页"
+      },
+      {
+        "at": "2026-10-12T08:31:21.812Z",
+        "text": "我的操作：翻看故事页"
+      }
+    ],
+    "sound": false
+  },
+  "measurement": {
+    "cargoMass": 2700,
+    "recordedMass": 2700,
+    "total": 3760,
+    "difference": 0,
+    "aligned": true,
+    "corrected": 2700
+  },
+  "unresolved": []
+}

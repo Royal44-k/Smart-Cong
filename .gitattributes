@@ -1,0 +1,7 @@
+# Preserve original asset bytes and historical checksums.
+* -text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.wav binary

@@ -1,0 +1,40 @@
+/* Real-time teaching diagrams keep the established river and experiment palette. */
+.mark-workbench{border:1px solid #b9cbb9;border-radius:14px;overflow:hidden;background:#f8fbf5;margin:20px 0 14px}
+.mark-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 16px;color:#355e50;font-size:15px}.mark-head span{font-size:13px}
+.mark-canvas{position:relative;isolation:isolate}.mark-canvas>.boat-model{display:block;width:100%}.mark-ink{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}.mark-ink path{fill:none;stroke:#f6d775;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+.picture-task .mark-surface{position:absolute;border:2px solid transparent;background:transparent!important;min-width:44px;min-height:44px;border-radius:8px;padding:0!important;touch-action:none;user-select:none;z-index:2;cursor:crosshair;transition:border-color .15s}
+.picture-task .mark-surface:hover{border-color:#f8f3cf}.picture-task .mark-surface:active{transform:none}.mark-surface span{position:absolute;right:5px;top:0;padding:1px 6px;background:#f8fbf5e8;color:#385849;border-radius:3px;font-size:12px;line-height:1.7;pointer-events:none}
+.mark-hull{left:19%;top:53%;width:56%;height:27%}.mark-shore{left:82%;top:58%;width:16%;height:39%}.mark-wave{left:1%;bottom:0;width:16%;height:30%}
+.picture-task .mark-instruction{margin:0;padding:12px 16px;font-size:14px;line-height:1.75;color:#456553}
+.mark-canvas[data-chosen=hull] .mark-hull{border-color:#b89543}.mark-canvas[data-chosen=shore] .mark-shore,.mark-canvas[data-chosen=wave] .mark-wave{border-color:#b89543}
+.desk-guide{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:22px 0 12px}
+.lab-page .desk-guide button{display:flex;gap:12px;align-items:center;text-align:left;background:#f3f7fa;border:1px solid #bdceda;padding:12px}
+.desk-guide b,.desk-guide small{display:block}.desk-guide small{font-size:12px;line-height:1.5;color:#526c7e}
+.desk-step-number{display:grid;place-items:center;border:1px solid #b4c9d5;min-width:32px;height:32px;border-radius:50%;font-size:16px;font-weight:700}
+.lab-page .desk-guide button[aria-current=step]{background:#315d7e;color:#fff;border-color:#315d7e}.desk-guide [aria-current=step] small{color:#e7f2f7}.desk-guide [aria-current=step] .desk-step-number{border-color:#adc7d8}
+.lab-page .desk-next{font-size:15px;margin:0 0 24px;color:#3f6076;line-height:1.8}
+.experiment-desk{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.06fr);gap:26px;align-items:start}
+.experiment-desk>section{min-width:0}.experiment-desk h2[id]{font:700 19px/1.6 var(--body);margin:0 0 16px;scroll-margin-top:20px;letter-spacing:0}
+.experiment-desk h2[id]>span{color:#67889f;margin-right:6px;font-size:15px}
+.lab-page .experiment-desk .bench-layout{grid-template-columns:1fr;gap:12px;align-items:start}
+.bench-picture{border-radius:12px;background:#eef5f8;padding:12px}.bench-picture:focus-visible{outline-offset:3px}
+.lab-page .bench-picture .hint{font-size:13px;line-height:1.7;margin:8px 2px 0}.lab-page .bench-now{font-size:14px;margin:10px 2px 0;color:#315973}
+.lab-page .experiment-desk .bench-controls{background:transparent;padding:0}.experiment-desk .bench-controls h2{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.experiment-desk .drag-tray{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center;margin:0 0 18px}.experiment-desk .drag-tray small{font-size:13px;line-height:1.7}.experiment-desk .drag-tray button{width:100%;padding:8px}
+.lab-page .control-label{margin:0 0 8px;font-size:15px;font-weight:600}.control-label small{font-weight:400;color:#576e7c;margin-left:10px}
+.bench-switches{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0 18px}.lab-page .bench-switches button{font-size:14px;padding:10px 6px}
+.sample-slots{display:grid;grid-template-columns:1fr 1fr;gap:12px}.sample-card{border:1px dashed #b4c8d5;border-radius:10px;padding:12px;background:#f5f9fb;min-width:0}.sample-card.recorded{border-style:solid;border-top:3px solid #769bae;padding-top:10px}
+.sample-card h3{font-size:18px;margin:0;display:flex;align-items:center;justify-content:space-between;gap:4px}.sample-card h3 small{font-size:12px;font-weight:400;color:#526c7e}.lab-page .sample-card p{font-size:13px;line-height:1.8;margin:8px 0;min-height:47px}.lab-page .sample-card button{display:block;width:100%;min-height:44px;padding:6px;font-size:14px}.sample-card [data-learning=sample]{background:#e4eef4}.sample-card [data-learning=restore-sample]{border:0;text-decoration:underline;text-underline-offset:4px;margin-top:3px}.sample-card [data-learning=restore-sample]:disabled{text-decoration:none}
+.lab-page #sample-note{font-size:13px;margin:12px 0 0;line-height:1.7}
+.lab-page .desk-live{font-size:14px;line-height:1.85;background:#e8f2ef;padding:12px;border-left:3px solid #69917e;margin:16px 0 0}.desk-live:empty{display:none}
+.lab-page .experiment-desk .lab-reasoning{margin:0;padding:16px;border-radius:12px}.experiment-desk .lab-reasoning h2{font-size:21px;line-height:1.6}.experiment-desk .observation-choices{grid-template-columns:1fr}.experiment-desk .lab-reasoning p{margin-bottom:12px}.experiment-desk .comparison-window{margin-top:10px}.experiment-desk .compact-record{margin:16px 0}.experiment-desk .pair-result{font-size:14px;margin:0 0 22px;padding:12px}.experiment-desk .lab-finding{margin:0 0 18px}.experiment-desk .lab-finding button{font-size:15px;line-height:1.8}
+.comparison-empty{padding:28px 20px;border:1px dashed #b2c9d8;border-radius:12px;background:#f6fafc}.comparison-empty>span{font:28px/1.6 var(--display);color:#688ca5}.comparison-empty h3{font-size:19px;margin:12px 0}.comparison-empty p{line-height:1.85;color:#47687e}.comparison-empty button{width:100%}
+.printed-reflection{break-inside:avoid}.reflection-blank{height:72px;border-bottom:1px dotted #98a493}.reflection-question{font-size:14px;color:#526657}
+@media(max-width:1000px){.experiment-desk{gap:18px}.lab-page .desk-guide button{gap:8px;padding:10px}.sample-card{padding:9px}.sample-card.recorded{padding-top:7px}}
+@media(max-width:800px){.experiment-desk{grid-template-columns:1fr;gap:28px}.desk-guide{gap:6px}.lab-page .desk-guide button{justify-content:center;padding:9px 4px;gap:6px}.desk-step-number{min-width:26px;height:26px;font-size:13px}.desk-guide b{font-size:14px}.desk-guide small{font-size:11px}.desk-compare{border-top:1px solid #c7d8e2;padding-top:22px}.lab-page .experiment-desk .lab-reasoning{padding:16px 12px}.sample-card{padding:12px}.sample-card.recorded{padding-top:10px}.mark-head{padding:10px 12px}.mark-head span{font-size:12px}.mark-surface span{font-size:10px;right:2px}.mark-hull{height:31%;top:50%}.mark-wave{left:1%;bottom:0;width:16%;height:34%}.picture-task .mark-instruction{padding:10px 12px;font-size:13px}}
+@media(prefers-reduced-motion:reduce){.mark-surface{transition:none}}
+
+.desk-guide{position:sticky;top:8px;z-index:12;background:#fff;border-radius:8px;box-shadow:0 0 0 8px #fff}.experiment-desk h2[id],.desk-explain h2[id]{scroll-margin-top:112px}.desk-explain{border-top:1px solid #c6d8e2;margin-top:26px;padding-top:24px}.desk-explain h2[id]{font:700 19px/1.6 var(--body);letter-spacing:0;margin:0 0 16px}.desk-explain h2[id]>span{color:#67889f;margin-right:6px;font-size:15px}.desk-explain .lab-finding{margin:0 0 16px;display:grid;grid-template-columns:1fr 1fr;gap:12px}.desk-explain .lab-finding legend{margin-bottom:8px}.desk-explain .lab-finding button{margin:0;font-size:15px}.desk-explain>.primary{max-width:480px;margin:0 auto;display:block}.desk-guide:focus-within{z-index:15}
+@media(max-width:800px){.desk-explain .lab-finding{grid-template-columns:1fr;gap:10px}.desk-guide{top:4px}.desk-explain{margin-top:18px}.desk-explain>.primary{width:100%}.desk-guide button small{font-size:12px}.mark-surface span{font-size:12px}}
+
+.experiment-desk :is(button,input,summary,[tabindex]),.desk-explain button{scroll-margin-top:112px;scroll-margin-bottom:24px}

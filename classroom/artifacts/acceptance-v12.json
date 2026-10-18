@@ -1,0 +1,101 @@
+{
+  "version": "1.2.0",
+  "date": "2026-10-10T12:28:40.364Z",
+  "environment": "Node.js v24.20.0 / Playwright / Microsoft Edge / Windows",
+  "runs": [
+    {
+      "name": "unit",
+      "exitCode": 0,
+      "seconds": 0.7,
+      "checks": 0,
+      "log": "artifacts/v12-verification/unit.txt"
+    },
+    {
+      "name": "learning-browser.mjs",
+      "exitCode": 0,
+      "seconds": 22.1,
+      "checks": 10,
+      "log": "artifacts/v12-verification/learning-browser.mjs.txt"
+    },
+    {
+      "name": "learning-accessibility-browser.mjs",
+      "exitCode": 0,
+      "seconds": 5.1,
+      "checks": 5,
+      "log": "artifacts/v12-verification/learning-accessibility-browser.mjs.txt"
+    },
+    {
+      "name": "browser.mjs",
+      "exitCode": 0,
+      "seconds": 12.5,
+      "checks": 9,
+      "log": "artifacts/v12-verification/browser.mjs.txt"
+    },
+    {
+      "name": "edge-browser.mjs",
+      "exitCode": 0,
+      "seconds": 7.6,
+      "checks": 5,
+      "log": "artifacts/v12-verification/edge-browser.mjs.txt"
+    },
+    {
+      "name": "geometry-browser.mjs",
+      "exitCode": 0,
+      "seconds": 2.1,
+      "checks": 1,
+      "log": "artifacts/v12-verification/geometry-browser.mjs.txt"
+    },
+    {
+      "name": "keyboard-browser.mjs",
+      "exitCode": 0,
+      "seconds": 2.5,
+      "checks": 2,
+      "log": "artifacts/v12-verification/keyboard-browser.mjs.txt"
+    },
+    {
+      "name": "production-browser.mjs",
+      "exitCode": 0,
+      "seconds": 3.8,
+      "checks": 7,
+      "log": "artifacts/v12-verification/production-browser.mjs.txt"
+    },
+    {
+      "name": "audio-browser.mjs",
+      "exitCode": 0,
+      "seconds": 2.9,
+      "checks": 4,
+      "log": "artifacts/v12-verification/audio-browser.mjs.txt"
+    },
+    {
+      "name": "production-details-browser.mjs",
+      "exitCode": 0,
+      "seconds": 4.1,
+      "checks": 2,
+      "log": "artifacts/v12-verification/production-details-browser.mjs.txt"
+    },
+    {
+      "name": "play-companion-browser.mjs",
+      "exitCode": 0,
+      "seconds": 13.6,
+      "checks": 12,
+      "log": "artifacts/v12-verification/play-companion-browser.mjs.txt"
+    },
+    {
+      "name": "play-touch-browser.mjs",
+      "exitCode": 0,
+      "seconds": 3.8,
+      "checks": 5,
+      "log": "artifacts/v12-verification/play-touch-browser.mjs.txt"
+    },
+    {
+      "name": "legacy-drag-browser.mjs",
+      "exitCode": 0,
+      "seconds": 2.5,
+      "checks": 1,
+      "log": "artifacts/v12-verification/legacy-drag-browser.mjs.txt"
+    }
+  ],
+  "allPassed": true,
+  "unitTests": 67,
+  "browserChecks": 63
+}

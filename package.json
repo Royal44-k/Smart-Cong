@@ -1,0 +1,15 @@
+{
+  "name": "smart-cong-archive",
+  "version": "1.8.0",
+  "private": true,
+  "type": "module",
+  "description": "曹冲称象：一线之差，全资产归档与课堂入口",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=classroom/.env classroom/server.mjs",
+    "verify": "node scripts/verify-assets.mjs",
+    "test": "node scripts/verify-assets.mjs && npm --prefix classroom test"
+  }
+}

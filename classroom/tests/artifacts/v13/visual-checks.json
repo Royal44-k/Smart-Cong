@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-12T02:16:35.660Z",
+  "viewports": [
+    320,
+    390,
+    768,
+    1440,
+    1920
+  ],
+  "errors": [],
+  "asset": {
+    "width": 1536,
+    "height": 1024
+  },
+  "styles": {
+    "family": "KaiTi, STKaiti, SimSun, serif",
+    "size": "43px",
+    "lineHeight": "55.9px",
+    "color": "rgb(30, 52, 55)",
+    "bodyFamily": "\"Microsoft YaHei\", \"PingFang SC\", sans-serif"
+  }
+}

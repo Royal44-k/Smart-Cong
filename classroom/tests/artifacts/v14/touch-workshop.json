@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "width": 390,
+  "height": 844,
+  "hasTouch": true,
+  "checks": [
+    "真实触摸完成首组",
+    "触摸进入下一组"
+  ]
+}

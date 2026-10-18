@@ -1,0 +1,65 @@
+[
+  {
+    "out": "compare-story-full",
+    "left": "before-story",
+    "right": "after-baseline-story",
+    "cssViewport": {
+      "width": 2880,
+      "height": 1036
+    },
+    "density": 1,
+    "images": [
+      {
+        "width": 1440,
+        "height": 2151
+      },
+      {
+        "width": 1440,
+        "height": 2075
+      }
+    ],
+    "note": "原图以1:1尺寸放入同宽裁窗，未缩放"
+  },
+  {
+    "out": "compare-story-focus",
+    "left": "before-story-focus",
+    "right": "after-baseline-story-focus",
+    "cssViewport": {
+      "width": 2040,
+      "height": 916
+    },
+    "density": 1,
+    "images": [
+      {
+        "width": 1020,
+        "height": 820
+      },
+      {
+        "width": 1020,
+        "height": 842
+      }
+    ],
+    "note": "原图以1:1尺寸放入同宽裁窗，未缩放"
+  },
+  {
+    "out": "compare-lab-focus",
+    "left": "before-lab-focus",
+    "right": "after-baseline-lab-focus",
+    "cssViewport": {
+      "width": 2100,
+      "height": 636
+    },
+    "density": 1,
+    "images": [
+      {
+        "width": 1050,
+        "height": 590
+      },
+      {
+        "width": 1050,
+        "height": 590
+      }
+    ],
+    "note": "原图以1:1尺寸放入同宽裁窗，未缩放"
+  }
+]

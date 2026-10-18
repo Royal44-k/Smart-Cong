@@ -1,0 +1,22 @@
+{
+  "version": "1.3",
+  "date": "2026-10-12",
+  "generator": "built-in image_gen",
+  "useCase": "illustration-story",
+  "adoptedFile": "CC-OBJECTS-v002.png",
+  "prompt": "Use case: illustration-story. Production sprite atlas for primary-school Cao Chong lesson, six objects in a precise 3 column by 2 row equal square grid, landscape 3:2. UNIFORM clean pale ivory background #F6F5E9, gentle realistic watercolor textbook illustration. TOP LEFT: natural full body Asian elephant, friendly gentle eyes. TOP MIDDLE: small traditional Chinese steelyard with one shallow hanging bronze pan, thin horizontal wooden rod and sliding bronze counterweight. TOP RIGHT: an EMPTY OPEN WOODEN ROWBOAT, exposed ribs inside, absolutely NO roof, NO cabin, NO shelter, NO mast, NO poles. BOTTOM LEFT: a shallow OPEN light-brown CARDBOARD box containing a flat small stack of cream paper books, low sides so books are clearly visible, absolutely not a wooden treasure chest, no metal corners. BOTTOM MIDDLE: a GROUP consisting of ONE short natural wood pencil and TWO small wooden wedge blocks, a unified set of experiment tools; absolutely NO paddle, no oar, no hammer. BOTTOM RIGHT: a group of small brass laboratory weights on a simple low tray. Match natural classroom materials and ancient story objects without modern logos. Center each object or group within central 75% of its equal cell with generous ivory gutters, don't overlap cells. Refined realistic textures, muted grey, walnut, cream and brass colors, delicate soft contact shadows, no scene or frame. No letters, labels, numbers, text, symbols or watermark anywhere. Cards will have labels written in HTML, never in the image.",
+  "tileLayout": {
+    "columns": 3,
+    "rows": 2,
+    "order": [
+      "elephant",
+      "scale",
+      "boat",
+      "box",
+      "tool",
+      "weights"
+    ]
+  },
+  "continuity": "开放木船；书箱为浅纸盒加书；工具为短铅笔加两块木楔，与C-L03采用场景的道具种类一致。20克、320克由界面标注，不从插画推算。",
+  "rejected": "初稿底色过暗；第二稿的船舱、木箱和船桨与采用场景不一致，未作为最终交付素材。"
+}

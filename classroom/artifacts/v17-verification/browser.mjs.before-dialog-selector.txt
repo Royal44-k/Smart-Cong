@@ -1,0 +1,22 @@
+PASS 真实操作通过E1
+PASS E4修正为E2，首次结局和草稿保留
+PASS 反思刷新恢复并可导出
+PASS 低年级模式可暂缓结论，得到E3
+PASS 小屏无溢出，装载状态刷新保留
+PASS 低年级图像路径无需大数输入即可完成
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+locator.innerText: Error: strict mode violation: locator('dialog') resolved to 2 elements:
+    1) <dialog open="" id="dialog">…</dialog> aka getByText('×一节课，怎样使用建议故事版安排20分钟、实验版安排30')
+    2) <dialog id="showcase" aria-labelledby="showcase-title"></dialog> aka locator('#showcase')
+
+Call log:
+[2m  - waiting for locator('dialog')[22m
+
+    at D:\Codex-chat-II\caochong-ai-learning\tests\browser.mjs:21:254 {
+  log: [ "  - waiting for locator('dialog')" ]
+}
+
+Node.js v24.20.0

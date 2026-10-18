@@ -1,0 +1,13 @@
+{
+  "version": "1.8.0",
+  "archives": [
+    {
+      "name": "曹冲称象-一线之差-课堂交付版-v1.8.zip",
+      "entries": 667,
+      "bytes": 72735228,
+      "sha256": "b4761fe185846297395c2ca27b3895ebb0b2dab9a81caf849587891d151dab44",
+      "crcPassed": true,
+      "forbiddenFileNames": []
+    }
+  ]
+}

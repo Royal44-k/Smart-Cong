@@ -1,0 +1,10 @@
+import fs from'node:fs';import{media}from'../src/media.mjs';
+const shots=JSON.parse(fs.readFileSync('media/shots.json','utf8'));
+for(const s of shots){
+ if(s.id==='C-V11'){s.exit=s.exit.split(' 出题工坊：')[0]+' 出题工坊：成果页可选出题给同桌。出题人藏起四图之一，交棒后解题人先补图、再说作用；掀帘只提供帮助，不代答。角色交换与核对反馈由界面承担。';s.interactionRevision='1.8';}
+ if(s.id==='C-L03'){s.exit=s.exit.split(' 出题工坊：')[0]+' 出题工坊：成果页可选设计独立的新书箱题，220/320/420克砝码、20/40/60克工具、三种工具位置共27题；同船同水、平稳自由漂浮同线。交棒冻结条件，先比较再计算，核对后按学生答案回代；每换一题就换一箱书。';s.interactionRevision='1.8';}
+}
+fs.writeFileSync('media/shots.json',JSON.stringify(shots,null,2)+'\n');
+const spec={version:'1.8',newVideoShots:0,storageRevision:7,entry:{phase:'reflect',journey:'full',optional:true,label:'出题给同桌'},story:{afterShot:'C-V11',roles:['选图并藏起','补图后说明作用'],frames:['boarding','reference','load','ledger'].map((key,i)=>({index:i,mediaKey:key,image:media[key].image.replace('media/','')})),stages:['make','pass','solve','explain','done'],help:'掀帘显示原图，仍需亲手补图、选理由；记录实际提示使用',handoff:'先补图，再出现作用问题；保持原镜头和图注，原结局不变'},lab:{afterShot:'C-L03',roles:['设定两次装载条件','比较轻重并计算'],stages:['make','pass','solve','done'],totals:[220,320,420],tools:[20,40,60],positions:['first','both','second'],formula:'书箱 + 第一次工具 = 砝码 + 第二次工具',combinations:27,rangeGrams:[160,480],conditions:'单题内同一艘船、同一盆水、船身平稳、自由漂浮、两次同一道水线；其它载荷保持不变',newPuzzle:'每换一题，就换一箱书；题目图卡是两次记录，不模拟同箱改质量',proof:'核对后将实际输入回代两次装载，给出总重和差值；改答或重新出题撤销旧试算',atlas:'learning/CC-OBJECTS-v002.png',objects:['box','weights','tool']},interaction:{freezeOnPass:true,noTimer:true,noScore:true,record:'两版各自保存最近6次实际核对和提示使用，不收集姓名；空白不记；同一轮防止连续重复核对，下一轮相同题独立记录',checked:'当前轮核对快照；改题和改答清除，旧结果不提前显示',media:'打开暂停音视频和伙伴朗读、取消在途模型请求；退出不自动续播',keyboard:'Tab限于工坊，Escape返回入口；触摸/按钮/键盘等效',model:'本轮操作不调用大模型、不上传学习文字，保留既有问答接口'},video:'界面接在原成果之后；不烧入固定数字、答案、学生原话或成功反应；不自动提交或推进',assets:{adoptedSceneImages:17,newRasterImages:0,shots:19,voiceLines:38,voiceTracks:19},productionGuide:'../docs/40-peer-challenge-production-v18.md'};
+fs.writeFileSync('media/peer-challenge-scenes.json',JSON.stringify(spec,null,2)+'\n');
+console.log('v1.8 peer handoffs synchronized: C-V11 + C-L03, 27 independent puzzles; no new video shots.');

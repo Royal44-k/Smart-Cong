@@ -1,0 +1,125 @@
+{
+  "version": "1.5.0",
+  "date": "2026-10-12T06:19:19.124Z",
+  "environment": "Node.js v24.20.0 / Playwright / Microsoft Edge / Windows",
+  "runs": [
+    {
+      "name": "unit",
+      "exitCode": 0,
+      "seconds": 0.8,
+      "checks": 0,
+      "log": "artifacts/v15-verification/unit.txt"
+    },
+    {
+      "name": "learning-browser.mjs",
+      "exitCode": 0,
+      "seconds": 22.6,
+      "checks": 10,
+      "log": "artifacts/v15-verification/learning-browser.mjs.txt"
+    },
+    {
+      "name": "learning-accessibility-browser.mjs",
+      "exitCode": 0,
+      "checks": 5,
+      "log": "artifacts/v15-verification/learning-accessibility-browser.mjs.txt",
+      "recheckedAfterFinalFix": true
+    },
+    {
+      "name": "browser.mjs",
+      "exitCode": 0,
+      "seconds": 13.1,
+      "checks": 9,
+      "log": "artifacts/v15-verification/browser.mjs.txt"
+    },
+    {
+      "name": "edge-browser.mjs",
+      "exitCode": 0,
+      "seconds": 7.7,
+      "checks": 5,
+      "log": "artifacts/v15-verification/edge-browser.mjs.txt"
+    },
+    {
+      "name": "geometry-browser.mjs",
+      "exitCode": 0,
+      "seconds": 2.3,
+      "checks": 1,
+      "log": "artifacts/v15-verification/geometry-browser.mjs.txt"
+    },
+    {
+      "name": "keyboard-browser.mjs",
+      "exitCode": 0,
+      "checks": 2,
+      "log": "artifacts/v15-verification/keyboard-browser.mjs.txt",
+      "recheckedAfterFinalFix": true
+    },
+    {
+      "name": "production-browser.mjs",
+      "exitCode": 0,
+      "seconds": 5.9,
+      "checks": 7,
+      "log": "artifacts/v15-verification/production-browser.mjs.txt"
+    },
+    {
+      "name": "audio-browser.mjs",
+      "exitCode": 0,
+      "seconds": 4.1,
+      "checks": 4,
+      "log": "artifacts/v15-verification/audio-browser.mjs.txt"
+    },
+    {
+      "name": "production-details-browser.mjs",
+      "exitCode": 0,
+      "seconds": 4.7,
+      "checks": 2,
+      "log": "artifacts/v15-verification/production-details-browser.mjs.txt"
+    },
+    {
+      "name": "play-companion-browser.mjs",
+      "exitCode": 0,
+      "seconds": 13.7,
+      "checks": 12,
+      "log": "artifacts/v15-verification/play-companion-browser.mjs.txt"
+    },
+    {
+      "name": "play-touch-browser.mjs",
+      "exitCode": 0,
+      "checks": 5,
+      "log": "artifacts/v15-verification/play-touch-browser.mjs.txt",
+      "recheckedAfterFinalFix": true
+    },
+    {
+      "name": "legacy-drag-browser.mjs",
+      "exitCode": 0,
+      "seconds": 3,
+      "checks": 1,
+      "log": "artifacts/v15-verification/legacy-drag-browser.mjs.txt"
+    },
+    {
+      "name": "reasoning-browser.mjs",
+      "exitCode": 0,
+      "seconds": 15.2,
+      "checks": 11,
+      "log": "artifacts/v15-verification/reasoning-browser.mjs.txt"
+    },
+    {
+      "name": "workshop-browser.mjs",
+      "exitCode": 0,
+      "checks": 13,
+      "log": "artifacts/v15-verification/workshop-browser.mjs.txt",
+      "recheckedAfterFinalFix": true
+    },
+    {
+      "name": "exploration-browser.mjs",
+      "exitCode": 0,
+      "checks": 13,
+      "log": "artifacts/v15-verification/exploration-browser.mjs.txt",
+      "recheckedAfterFinalFix": true
+    }
+  ],
+  "allPassed": true,
+  "finalFix": "显式区分指针与键盘输入；触控不跳页，键盘避开固定步骤与完整伙伴",
+  "supplementalTouch": true,
+  "unitTests": 96,
+  "browserChecks": 100,
+  "completedAt": "2026-10-12T06:24:50.697Z"
+}

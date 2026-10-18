@@ -1,0 +1,20 @@
+{
+  "version": "1.1",
+  "date": "2026-10-10",
+  "tool": "Codex image generation",
+  "assets": [
+    {
+      "id": "CC-STUDY",
+      "adopted": "artwork/CC-STUDY-v003.png",
+      "supersedes": "CC-STUDY-v002.png",
+      "prompt": "Edit this classroom reference image with one carefully targeted change: replace the FIVE blank cream paper cards across the front of the wooden desk with EXACTLY FOUR equally sized blank cream paper cards, evenly spaced in a single neat row. Preserve the entire scene otherwise: same empty modern Chinese primary classroom, green blackboard, warm daylight from windows on the left, wooden desk, blue closed book at left, transparent rectangular water tank with the same small empty wooden boat floating in its center, two wooden blocks on the right. Same camera angle and photo-real cinematic texture. Wide 16:9. No text, no numerals, no people, no logos. Exactly four cards total. This is the final framing reference for a child's four-panel retelling of Cao Chong weighing an elephant.",
+      "review": "四张卡；同教室、空船、水槽；用于故事四格讲述。"
+    },
+    {
+      "id": "CC-BOOK-TRIAL",
+      "adopted": "artwork/CC-BOOK-TRIAL-v001.png",
+      "prompt": "Use the immediately preceding classroom image as a strict visual continuity reference. Make a new cinematic still of the SAME modern Chinese primary classroom, SAME green blackboard, SAME warm daylight from windows on the left, SAME wooden desk, SAME transparent rectangular water tank and SAME small EMPTY wooden boat floating in its center. This is the next activity, a book-box weighing experiment. REMOVE all four blank paper cards. On the foreground table OUTSIDE the tank, place a SMALL open light kraft cardboard box containing ONE thin plain paperback book, proportionate to the little boat. Beside this box neatly place one short plain pencil and two very small wooden wedges, all outside the water. On the opposite right side of the tank, place a small orderly set of plain metal calibration weights. Remove the old blue book and any unrelated blocks so the objects are easy for a child to recognize. The boat stays empty, freely floating, waiting for the child's experiment; do not load the book or weights into it. Beautiful photographic educational film still, wide 16:9, closer focus on the box and tank yet enough space for UI outside the image. No people, no text, no letters, no numerals, no labels, no watermarks. Keep the tank physically plausible, boat above the water with proper buoyancy, calm water and consistent wooden boat design.",
+      "review": "现代课堂及空船延续；薄书纸箱、短铅笔、两块小木楔、砝码；无排序卡，无内嵌数值。用于实验迁移。"
+    }
+  ]
+}

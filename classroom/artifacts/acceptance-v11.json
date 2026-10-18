@@ -1,0 +1,80 @@
+{
+  "version": "1.1.0",
+  "date": "2026-10-10T09:32:49.160Z",
+  "environment": "Node.js v24.20.0 / Playwright / Microsoft Edge / Windows",
+  "runs": [
+    {
+      "name": "unit",
+      "exitCode": 0,
+      "seconds": 0.4,
+      "checks": 0,
+      "log": "artifacts/v11-verification/unit.txt"
+    },
+    {
+      "name": "learning-browser.mjs",
+      "exitCode": 0,
+      "seconds": 22,
+      "checks": 10,
+      "log": "artifacts/v11-verification/learning-browser.mjs.txt"
+    },
+    {
+      "name": "learning-accessibility-browser.mjs",
+      "exitCode": 0,
+      "seconds": 6.7,
+      "checks": 5,
+      "log": "artifacts/v11-verification/learning-accessibility-browser.mjs.txt"
+    },
+    {
+      "name": "browser.mjs",
+      "exitCode": 0,
+      "seconds": 13.6,
+      "checks": 9,
+      "log": "artifacts/v11-verification/browser.mjs.txt"
+    },
+    {
+      "name": "edge-browser.mjs",
+      "exitCode": 0,
+      "seconds": 7.6,
+      "checks": 5,
+      "log": "artifacts/v11-verification/edge-browser.mjs.txt"
+    },
+    {
+      "name": "geometry-browser.mjs",
+      "exitCode": 0,
+      "seconds": 2.7,
+      "checks": 1,
+      "log": "artifacts/v11-verification/geometry-browser.mjs.txt"
+    },
+    {
+      "name": "keyboard-browser.mjs",
+      "exitCode": 0,
+      "seconds": 3.8,
+      "checks": 2,
+      "log": "artifacts/v11-verification/keyboard-browser.mjs.txt"
+    },
+    {
+      "name": "production-browser.mjs",
+      "exitCode": 0,
+      "seconds": 5.6,
+      "checks": 7,
+      "log": "artifacts/v11-verification/production-browser.mjs.txt"
+    },
+    {
+      "name": "audio-browser.mjs",
+      "exitCode": 0,
+      "seconds": 4.4,
+      "checks": 4,
+      "log": "artifacts/v11-verification/audio-browser.mjs.txt"
+    },
+    {
+      "name": "production-details-browser.mjs",
+      "exitCode": 0,
+      "seconds": 5.8,
+      "checks": 2,
+      "log": "artifacts/v11-verification/production-details-browser.mjs.txt"
+    }
+  ],
+  "allPassed": true,
+  "unitTests": 51,
+  "browserChecks": 45
+}

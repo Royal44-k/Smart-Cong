@@ -1,0 +1,25 @@
+PASS 出题、交棒与解题分屏，交棒不泄漏题图，选图前不显示理由
+PASS 错误图与理由可修订，纸帘只帮助不代答，反馈在视野内，原结局和作品未改变
+PASS 核对记录可查看、打印和导出，刷新恢复；换题清空当前答案但保留实际尝试
+PASS 只在第二次的工具要加上，回代显示真实差值；改数撤销旧试算和成功反馈
+PASS 工具两次都在和只在第一次分别支持相等与减法，三种题各自记录原条件
+PASS 输入不重绘失焦，中文输入法结束后接收全角数字，刷新保留冻结题目和未完答案
+PASS revision6旧存档无损接入，原猜想、图注、反思和首次结局保留
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+false !== true
+
+    at file:///D:/Codex-chat-II/caochong-ai-learning/tests/peer-browser.mjs:78:117 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.20.0

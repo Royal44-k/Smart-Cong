@@ -1,0 +1,16 @@
+{
+  "source": "caochong-ai-learning",
+  "basis": "classroom/DELIVERY-MANIFEST.json",
+  "includedSupplement": [
+    "delivery-files.txt",
+    "artifacts/research-*"
+  ],
+  "excludedCategories": [
+    "旧版本ZIP",
+    "弃用候选图与历史应用基线",
+    "不在当前交付中的一次性修补脚本和旧截图",
+    "内部过程记录、运行日志和私人环境配置",
+    "其他故事项目"
+  ],
+  "note": "当前交付已采用的早期编号生产资料与累计验收证据保留；原项目和原始版本包不变。"
+}

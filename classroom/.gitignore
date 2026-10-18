@@ -1,0 +1,5 @@
+# Local administrator configuration is never part of the classroom package.
+.env
+.env.*
+!.env.example
+.superpowers/

@@ -1,0 +1,2 @@
+PASS 仅Tab/Enter/Space完成称象练习E1
+PASS 打印版包含真实反思且隐藏游戏界面

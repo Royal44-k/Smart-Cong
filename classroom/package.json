@@ -1,0 +1,12 @@
+{
+  "name": "caochong-waterline",
+  "private": true,
+  "version": "1.8.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/learning-browser.mjs && node tests/learning-accessibility-browser.mjs && node tests/browser.mjs && node tests/edge-browser.mjs && node tests/geometry-browser.mjs && node tests/keyboard-browser.mjs && node tests/production-browser.mjs && node tests/audio-browser.mjs && node tests/production-details-browser.mjs && node tests/play-companion-browser.mjs && node tests/play-touch-browser.mjs && node tests/legacy-drag-browser.mjs && node tests/reasoning-browser.mjs && node tests/workshop-browser.mjs && node tests/exploration-browser.mjs && node tests/transfer-bridge-browser.mjs && node tests/showcase-browser.mjs && node tests/peer-browser.mjs",
+    "build:production": "node scripts/build-companion-production.mjs && node scripts/build-reasoning-production-v13.mjs && node scripts/build-workshop-production-v14.mjs && node scripts/build-exploration-production-v15.mjs && node scripts/build-transfer-production-v16.mjs && node scripts/build-showcase-production-v17.mjs && node scripts/build-peer-production-v18.mjs && node scripts/build-classroom-production.mjs && node scripts/build-reasoning-assets-v13.mjs"
+  }
+}

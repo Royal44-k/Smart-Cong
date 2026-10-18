@@ -1,0 +1,145 @@
+{
+  "version": "1.8.0",
+  "date": "2026-10-12T08:29:23.701Z",
+  "environment": "Node.js v24.20.0 / Playwright / Microsoft Edge / Windows",
+  "runs": [
+    {
+      "name": "learning-browser.mjs",
+      "exitCode": 0,
+      "seconds": 23.4,
+      "checks": 10,
+      "log": "artifacts/v18-verification/learning-browser.mjs.txt"
+    },
+    {
+      "name": "learning-accessibility-browser.mjs",
+      "exitCode": 0,
+      "seconds": 5.4,
+      "checks": 5,
+      "log": "artifacts/v18-verification/learning-accessibility-browser.mjs.txt"
+    },
+    {
+      "name": "browser.mjs",
+      "exitCode": 0,
+      "seconds": 12.4,
+      "checks": 9,
+      "log": "artifacts/v18-verification/browser.mjs.txt"
+    },
+    {
+      "name": "edge-browser.mjs",
+      "exitCode": 0,
+      "seconds": 8.3,
+      "checks": 5,
+      "log": "artifacts/v18-verification/edge-browser.mjs.txt"
+    },
+    {
+      "name": "geometry-browser.mjs",
+      "exitCode": 0,
+      "seconds": 2.3,
+      "checks": 1,
+      "log": "artifacts/v18-verification/geometry-browser.mjs.txt"
+    },
+    {
+      "name": "keyboard-browser.mjs",
+      "exitCode": 0,
+      "seconds": 2.8,
+      "checks": 2,
+      "log": "artifacts/v18-verification/keyboard-browser.mjs.txt"
+    },
+    {
+      "name": "production-browser.mjs",
+      "exitCode": 0,
+      "seconds": 3.8,
+      "checks": 7,
+      "log": "artifacts/v18-verification/production-browser.mjs.txt"
+    },
+    {
+      "name": "audio-browser.mjs",
+      "exitCode": 0,
+      "seconds": 3.2,
+      "checks": 4,
+      "log": "artifacts/v18-verification/audio-browser.mjs.txt"
+    },
+    {
+      "name": "production-details-browser.mjs",
+      "exitCode": 0,
+      "seconds": 4.2,
+      "checks": 2,
+      "log": "artifacts/v18-verification/production-details-browser.mjs.txt"
+    },
+    {
+      "name": "play-companion-browser.mjs",
+      "exitCode": 0,
+      "seconds": 13.3,
+      "checks": 12,
+      "log": "artifacts/v18-verification/play-companion-browser.mjs.txt"
+    },
+    {
+      "name": "play-touch-browser.mjs",
+      "exitCode": 0,
+      "seconds": 18.1,
+      "checks": 5,
+      "log": "artifacts/v18-verification/play-touch-browser.mjs.txt"
+    },
+    {
+      "name": "legacy-drag-browser.mjs",
+      "exitCode": 0,
+      "seconds": 3.8,
+      "checks": 1,
+      "log": "artifacts/v18-verification/legacy-drag-browser.mjs.txt"
+    },
+    {
+      "name": "reasoning-browser.mjs",
+      "exitCode": 0,
+      "seconds": 14.7,
+      "checks": 11,
+      "log": "artifacts/v18-verification/reasoning-browser.mjs.txt"
+    },
+    {
+      "name": "workshop-browser.mjs",
+      "exitCode": 0,
+      "seconds": 15.2,
+      "checks": 13,
+      "log": "artifacts/v18-verification/workshop-browser.mjs.txt"
+    },
+    {
+      "name": "exploration-browser.mjs",
+      "exitCode": 0,
+      "seconds": 14.4,
+      "checks": 13,
+      "log": "artifacts/v18-verification/exploration-browser.mjs.txt"
+    },
+    {
+      "name": "transfer-bridge-browser.mjs",
+      "exitCode": 0,
+      "seconds": 13.4,
+      "checks": 14,
+      "log": "artifacts/v18-verification/transfer-bridge-browser.mjs.txt"
+    },
+    {
+      "name": "showcase-browser.mjs",
+      "exitCode": 0,
+      "seconds": 21,
+      "checks": 12,
+      "log": "artifacts/v18-verification/showcase-browser.mjs.txt"
+    },
+    {
+      "name": "unit",
+      "exitCode": 0,
+      "seconds": 0.8,
+      "checks": 0,
+      "log": "artifacts/v18-verification/unit.txt"
+    },
+    {
+      "name": "peer-browser.mjs",
+      "exitCode": 0,
+      "seconds": 16.4,
+      "checks": 12,
+      "log": "artifacts/v18-verification/peer-browser.mjs.txt"
+    }
+  ],
+  "allPassed": true,
+  "unitTests": 138,
+  "browserChecks": 138,
+  "finalRecheck": "本轮核对快照与同值防重、适龄提示和算式单位、Escape同步恢复后重跑全部单元与新工坊；17个原流程脚本均已通过，未变动其功能。",
+  "recheckedAt": "2026-10-12T08:38:54.866Z"
+}

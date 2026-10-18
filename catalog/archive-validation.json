@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-18T02:51:47.479Z",
+  "sourceFiles": 683,
+  "sourceBytes": 147265300,
+  "originalClassroomDeliveryFiles": 666,
+  "archiveZipCount": 1,
+  "sourceIntegrity": "passed",
+  "sourceSecretScan": "no matching token/private-key signatures; no private .env files copied",
+  "zipIntegrity": "v1.8 ZIP: 667 entries; CRC and SHA256 passed",
+  "freshUnitTests": {
+    "passed": 138,
+    "failed": 0,
+    "command": "npm --prefix classroom test"
+  },
+  "freshBrowserSmoke": {
+    "passed": true,
+    "checks": [
+      {
+        "mode": "story",
+        "title": "大象来了！"
+      },
+      {
+        "mode": "lab",
+        "title": "今天，你想研究什么？"
+      }
+    ],
+    "mediaAndModuleRoutes": 4,
+    "privateRoutesBlocked": 2,
+    "pageErrors": []
+  },
+  "originalBrowserBaseline": {
+    "passed": 138,
+    "files": 18,
+    "source": "classroom/artifacts/acceptance-v18.json",
+    "note": "2026-10-12完整验收；本次未声称重跑全部138浏览器检查"
+  },
+  "scope": "仅最新v1.8完整资产；原始应用和素材字节保持不变",
+  "version": "1.8.0"
+}

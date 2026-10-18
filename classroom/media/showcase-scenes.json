@@ -1,0 +1,124 @@
+{
+  "version": "1.7",
+  "newVideoShots": 0,
+  "storageRevision": 6,
+  "storageChange": "无；页码及提示显隐仅在展示界面临时保存",
+  "entry": {
+    "phase": "reflect",
+    "journey": "full",
+    "optional": true
+  },
+  "story": {
+    "afterShot": "C-V11",
+    "pages": [
+      {
+        "id": "S1",
+        "word": "先",
+        "mediaKey": "boarding",
+        "image": "artwork/CC-BOARDING-v002.png",
+        "studentText": "learning.workshop.captions对应页；空白不补写",
+        "reference": "storyPages对应参考讲法，主动展开"
+      },
+      {
+        "id": "S2",
+        "word": "再",
+        "mediaKey": "reference",
+        "image": "artwork/CC-WATER-v001.png",
+        "studentText": "learning.workshop.captions对应页；空白不补写",
+        "reference": "storyPages对应参考讲法，主动展开"
+      },
+      {
+        "id": "S3",
+        "word": "然后",
+        "mediaKey": "load",
+        "image": "artwork/CC-UNLOADED-v001.png",
+        "studentText": "learning.workshop.captions对应页；空白不补写",
+        "reference": "storyPages对应参考讲法，主动展开"
+      },
+      {
+        "id": "S4",
+        "word": "最后",
+        "mediaKey": "ledger",
+        "image": "artwork/CC-LEDGER-v001.png",
+        "studentText": "learning.workshop.captions对应页；空白不补写",
+        "reference": "storyPages对应参考讲法，主动展开"
+      }
+    ],
+    "handoff": "保持原镜头起止、人物、对白和既有排序互动；放映在作品页由学生启动，图卡只用静帧，未来接入视频也不改成自动播放"
+  },
+  "lab": {
+    "afterShot": "C-L03",
+    "pages": [
+      {
+        "id": "L1",
+        "title": "提出问题",
+        "data": [
+          "learning.lab.question",
+          "learning.lab.hypothesis"
+        ],
+        "imageKey": "lab_plan"
+      },
+      {
+        "id": "L2",
+        "title": "用记录说话",
+        "data": [
+          "learning.lab.samples.A",
+          "learning.lab.samples.B",
+          "learning.reasoning.observation",
+          "learning.reasoning.reflection",
+          "reflections[0]"
+        ],
+        "visual": "按保存快照绘制原小船模型；A/B缺失保持留白"
+      },
+      {
+        "id": "L3",
+        "title": "回到大船",
+        "data": [
+          "firstEnding",
+          "ending",
+          "cargo",
+          "counts",
+          "crewPresent",
+          "claimedMass",
+          "issues(state)",
+          "reflections[1]"
+        ],
+        "visual": "原实时船图；当前数值与首次结局分开，条件有缺口时不宣称确认"
+      },
+      {
+        "id": "L4",
+        "title": "换个问题",
+        "data": [
+          "learning.lab.transferNumber",
+          "learning.lab.transferReason",
+          "learning.bridge",
+          "reflections[2]"
+        ],
+        "atlas": "learning/CC-OBJECTS-v002.png",
+        "objects": "书箱、工具20克、砝码320克；题目和学生答案明确分开"
+      }
+    ],
+    "handoff": "保留原书箱配对、试分和手算；研究会只读展示本人记录，原镜头不要烧入学生答案或成功评价"
+  },
+  "interaction": {
+    "controls": [
+      "上一页/下一页",
+      "页码直达",
+      "左右方向键",
+      "原生展开/收起",
+      "返回/Escape"
+    ],
+    "noAutoAdvance": true,
+    "media": "打开时暂停当前音视频与伙伴朗读，取消在途模型请求；退出不自动续播",
+    "focus": "模态范围内循环；退出回到入口；内容可滚动，顶栏及翻页栏固定",
+    "model": "不上传图注或反思，不因翻页调用模型，保留原问答接口"
+  },
+  "assets": {
+    "newRasterImages": 0,
+    "adoptedSceneImages": 17,
+    "shots": 19,
+    "voiceLines": 38,
+    "voiceTracks": 19
+  },
+  "productionGuide": "../docs/37-showcase-production-v17.md"
+}

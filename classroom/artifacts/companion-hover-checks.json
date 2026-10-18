@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-10T12:45:25.472Z",
+  "checks": [
+    {
+      "mode": "story",
+      "collapsed": false,
+      "background": "rgba(0, 0, 0, 0)",
+      "scale": 1.05945,
+      "resetScale": 1
+    },
+    {
+      "mode": "story",
+      "collapsed": true,
+      "background": "rgba(0, 0, 0, 0)",
+      "scale": 1.05944,
+      "resetScale": 1
+    },
+    {
+      "mode": "lab",
+      "collapsed": false,
+      "background": "rgba(0, 0, 0, 0)",
+      "scale": 1.05944,
+      "resetScale": 1
+    },
+    {
+      "mode": "lab",
+      "collapsed": true,
+      "background": "rgba(0, 0, 0, 0)",
+      "scale": 1.05946,
+      "resetScale": 1
+    }
+  ],
+  "keyboardFocusRetained": true,
+  "reducedMotion": true
+}

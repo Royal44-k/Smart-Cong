@@ -1,0 +1,19 @@
+{
+  "project": "曹冲称象：一线之差",
+  "currentVersion": "1.8.0",
+  "scope": "仅最新正式课堂包",
+  "releases": [
+    {
+      "source": "曹冲称象-一线之差-课堂交付版-v1.8.zip",
+      "version": "1.8",
+      "tag": "v1.8",
+      "originalName": "曹冲称象-一线之差-课堂交付版-v1.8.zip",
+      "assetName": "caochong-waterline-v1.8.zip",
+      "bytes": 72735228,
+      "sha256": "b4761fe185846297395c2ca27b3895ebb0b2dab9a81caf849587891d151dab44",
+      "description": "我出题，你来解",
+      "url": "https://github.com/Royal44-k/Smart-Cong/releases/tag/v1.8",
+      "downloadUrl": "https://github.com/Royal44-k/Smart-Cong/releases/download/v1.8/caochong-waterline-v1.8.zip"
+    }
+  ]
+}

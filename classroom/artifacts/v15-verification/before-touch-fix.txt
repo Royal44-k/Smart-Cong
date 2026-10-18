@@ -1,0 +1,27 @@
+PASS 图上选岸柱和浪花给出具体原因，不错误推进
+PASS 自由划线留在船身，具体正反馈与刷新恢复成立，不要求笔迹精确
+PASS 键盘图上选择和原按钮等效，旧通关路径仍成立
+PASS 记录卡显示实际条件，照A摆回和重新摆放不覆盖旧证据
+PASS 三步定位同步焦点；完成标记由实际解释决定，改记录后重新观察
+PASS 320至1440像素无横向溢出，点击目标至少44像素，手机真实触控可用
+PASS Esc取消和画到舞台外松开均不误提交，不影响继续选择
+PASS 真实触屏划线可完成，保留同样的记号状态
+PASS 第二根手指落在画布外也取消本次笔迹，不误提交
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+72 !== 0
+
+    at file:///D:/Codex-chat-II/caochong-ai-learning/tests/exploration-browser.mjs:18:499 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 72,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.20.0

@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+const engine=await import('../src/engine.mjs').catch(()=>({}));
+const {createState,measurements,issues,saveDraft,resolveEnding}=engine;
+const ready=()=>{const s=createState('lab');s.referenceCaptured=true;s.crewPresent=true;s.cargo=[true,true,true,true,false];s.counts=[1,1,1,1,0];s.claimedMass=2700;return s;};
+test('public rule API exists',()=>assert.equal(typeof createState,'function'));
+test('same crew with 2700 cargo matches reference total',()=>{const m=measurements(ready());assert.equal(m.total,3760);assert.equal(m.aligned,true);});
+test('missing crew requires 2760 to match, not elephant mass',()=>{const s=ready();s.crewPresent=false;s.cargo[4]=true;s.counts[4]=1;s.claimedMass=2760;assert.equal(measurements(s).aligned,true);assert.ok(issues(s).includes('crew'));assert.ok(issues(s).includes('answer'));assert.equal(resolveEnding(s,true),'E4');});
+test('known crew correction makes absent crew comparison valid',()=>{const s=ready();s.crewPresent=false;s.cargo[4]=true;s.counts[4]=1;s.accountCrew=true;assert.deepEqual(issues(s),[]);assert.equal(resolveEnding(s,true),'E1');});
+test('not aligned cannot pass even with guessed 2700',()=>{const s=ready();s.cargo[3]=false;s.counts[3]=0;assert.equal(resolveEnding(s,true),'E4');});
+test('each floating condition matters',()=>{for(const key of ['calm','balanced','free']){const s=ready();s[key]=false;assert.equal(resolveEnding(s,true),'E4');assert.ok(issues(s).includes(key));}});
+test('missing or duplicate batch cannot pass',()=>{for(const count of [0,2]){const s=ready();s.counts[1]=count;assert.ok(issues(s).includes('ledger'));assert.equal(resolveEnding(s,true),'E4');}});
+test('returning crew with extra 60 still loaded is too heavy',()=>{const s=ready();s.cargo[4]=true;s.counts[4]=1;assert.equal(measurements(s).difference,60);assert.equal(resolveEnding(s,true),'E4');});
+test('invalid saved draft then correction yields E2 without clearing old evidence',()=>{const s=ready();s.crewPresent=false;s.cargo[4]=true;s.counts[4]=1;s.claimedMass=2760;saveDraft(s);s.claimedMass=2700;s.accountCrew=true;assert.equal(resolveEnding(s,true),'E2');assert.ok(s.drafts[0].issues.includes('crew'));});
+test('same valid draft does not create repair ending',()=>{const s=ready();saveDraft(s);assert.equal(resolveEnding(s,true),'E1');});
+test('withholding result always gives E3',()=>{assert.equal(resolveEnding(createState('story'),false),'E3');assert.equal(resolveEnding(ready(),false),'E3');});
+test('null, NaN, negative or infinity cannot pass',()=>{for(const val of [null,NaN,-1,Infinity]){const s=ready();s.claimedMass=val;assert.ok(issues(s).includes('answer'));}});
+test('reference cannot be skipped',()=>{const s=ready();s.referenceCaptured=false;assert.ok(issues(s).includes('reference'));});
+test('old draft cannot bless changed current load',()=>{const s=ready();saveDraft(s);s.cargo[2]=false;assert.equal(resolveEnding(s,true),'E4');});
+

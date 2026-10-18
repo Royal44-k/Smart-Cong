@@ -1,0 +1,11 @@
+import {media} from '../src/media.mjs';
+import fs from 'node:fs';
+const shots=JSON.parse(fs.readFileSync('media/shots.json','utf8'));
+for(const s of shots){
+ if(s.id==='C-V11'){s.exit=s.exit.split(' 作品展示：')[0]+' 作品展示：完成四格排序后进入小书，可选打开四页故事放映。学生主动翻页，自己的图注与参考讲法分别展开；不自动朗读，不新增完成门槛。';s.interactionRevision='1.7';}
+ if(s.id==='C-L03'){s.exit=s.exit.split(' 作品展示：')[0]+' 作品展示：进入实验报告后，可选展开四页研究会，依次展示本人问题与原猜想、A/B快照与观察修订、首次及当前称象结局、书箱判断。缺失留空，暂定不改成确认，错误原样保留；不生成掌握分。';s.interactionRevision='1.7';}
+}
+fs.writeFileSync('media/shots.json',JSON.stringify(shots,null,2)+'\n');
+const spec={version:'1.7',newVideoShots:0,storageRevision:6,storageChange:'无；页码及提示显隐仅在展示界面临时保存',entry:{phase:'reflect',journey:'full',optional:true},story:{afterShot:'C-V11',pages:[['S1','先','boarding'],['S2','再','reference'],['S3','然后','load'],['S4','最后','ledger']].map(([id,word,mediaKey])=>({id,word,mediaKey,image:media[mediaKey].image.replace('media/',''),studentText:'learning.workshop.captions对应页；空白不补写',reference:'storyPages对应参考讲法，主动展开'})),handoff:'保持原镜头起止、人物、对白和既有排序互动；放映在作品页由学生启动，图卡只用静帧，未来接入视频也不改成自动播放'},lab:{afterShot:'C-L03',pages:[{id:'L1',title:'提出问题',data:['learning.lab.question','learning.lab.hypothesis'],imageKey:'lab_plan'},{id:'L2',title:'用记录说话',data:['learning.lab.samples.A','learning.lab.samples.B','learning.reasoning.observation','learning.reasoning.reflection','reflections[0]'],visual:'按保存快照绘制原小船模型；A/B缺失保持留白'},{id:'L3',title:'回到大船',data:['firstEnding','ending','cargo','counts','crewPresent','claimedMass','issues(state)','reflections[1]'],visual:'原实时船图；当前数值与首次结局分开，条件有缺口时不宣称确认'},{id:'L4',title:'换个问题',data:['learning.lab.transferNumber','learning.lab.transferReason','learning.bridge','reflections[2]'],atlas:'learning/CC-OBJECTS-v002.png',objects:'书箱、工具20克、砝码320克；题目和学生答案明确分开'}],handoff:'保留原书箱配对、试分和手算；研究会只读展示本人记录，原镜头不要烧入学生答案或成功评价'},interaction:{controls:['上一页/下一页','页码直达','左右方向键','原生展开/收起','返回/Escape'],noAutoAdvance:true,media:'打开时暂停当前音视频与伙伴朗读，取消在途模型请求；退出不自动续播',focus:'模态范围内循环；退出回到入口；内容可滚动，顶栏及翻页栏固定',model:'不上传图注或反思，不因翻页调用模型，保留原问答接口'},assets:{newRasterImages:0,adoptedSceneImages:17,shots:19,voiceLines:38,voiceTracks:19},productionGuide:'../docs/37-showcase-production-v17.md'};
+fs.writeFileSync('media/showcase-scenes.json',JSON.stringify(spec,null,2)+'\n');
+console.log('v1.7 showcase handoffs synchronized: C-V11 + C-L03; no new video shots.');

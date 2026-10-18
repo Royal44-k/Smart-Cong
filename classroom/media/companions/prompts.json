@@ -1,0 +1,21 @@
+{
+  "tool": "image_gen.imagegen",
+  "mode": "generate",
+  "date": "2026-10-10",
+  "assets": [
+    {
+      "id": "CC-CAO-EXPRESSIONS",
+      "file": "CC-CAO-EXPRESSIONS-v001.png",
+      "prompt": "Create a transparent PNG 2 by 2 expression sprite sheet for a premium cinematic 3D Chinese primary-school learning game. Four full-body poses of the same child Cao Chong, consistent face, topknot hairstyle, blue-gray Han crossed-collar robe, cream cuffs, brown belt, small cloth shoes. Equal square quadrants, identical camera scale, lighting and proportions, each figure entirely contained with transparent margins. Upper left attentive, hands near waist, soft smile. Upper right thoughtful, finger near chin, slight head tilt. Lower left delighted smile and thumbs up. Lower right reassuring warm smile and open palm inviting another try. Genuine alpha background, no ground plane, text, labels, panel borders, props or cropped body parts. Gentle soft studio illumination, warm and appealing sculpted animation-film character. Use the adopted CC-CAO-EXPRESSIONS-v001.png as identity reference when making further edits.",
+      "generatedSource": "exec-f4dc079f-80dc-4fcb-845b-bd1582df013b.png",
+      "promptKind": "整理后的复现提示词"
+    },
+    {
+      "id": "CC-ELEPHANT-EXPRESSIONS",
+      "file": "CC-ELEPHANT-EXPRESSIONS-v001.png",
+      "generatedSource": "exec-692c4887-d5b9-4e41-b2ab-cf16b3d0aa28.png",
+      "promptKind": "生成时使用的提示词",
+      "prompt": "Create a production-ready transparent PNG sprite sheet, 2 by 2 perfectly equal quadrants, FOUR full-body poses of the SAME adorable young elephant educational-game companion. Premium cinematic 3D children's animation, sculpted soft blue-gray skin, soft peach-pink inner ears, luminous warm brown eyes, rounded cheeks, small plump feet, NO tusks, NO clothing, NO lettering. The elephant is standing toward viewer, small and approachable, consistent identical character, camera scale and lighting across all four quadrants. Upper left: relaxed attentive friendly smile, trunk curved gently down. Upper right: curious thoughtful head tilt, trunk curled near cheek, looking at a puzzle. Lower left: joyful delighted smile, trunk lifted, a gentle celebratory pose, four feet visible. Lower right: warm encouraging smile, one front foot slightly forward and trunk reaching gently toward viewer. Each pose centered in its own quadrant and entirely contained with clear transparent margins, generous space between poses. Genuine transparent alpha background, no ground plane, no shadows extending across quadrants, no framing, no labels, no props. Exquisite soft studio lighting, consistent with a warm Chinese children's historical science adventure, highly polished appealing animation-film character asset."
+    }
+  ]
+}

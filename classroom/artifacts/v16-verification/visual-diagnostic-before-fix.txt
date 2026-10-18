@@ -1,0 +1,11 @@
+v1.6首次视觉复核观察记录（修复前，2026-10-12）
+不是修复后重新运行的输出；以下值来自本轮真实浏览器工具输出。
+1. fixture: lab/source, bridge.tools=20, bridge.checked=true, 1440x1000.
+split-bar HTML含 style="--tool-share:6.25%"。
+父宽1004，内部宽1002；span实际宽0，i实际宽1002。
+span的getComputedStyle('--tool-share')为空。
+根因：现有响应CSP不允许HTML内联style；滑块通过JS style.setProperty更新时正常。
+2. split-check鼠标hover并等待220ms：
+foreground rgb(255,255,255), background rgb(227,233,222)。
+根因：全局button:hover:not(:disabled)优先于普通按钮状态样式。
+修复后证据：tests/artifacts/v16/split-matched-1440.jpg、transfer-bridge-browser.json。
